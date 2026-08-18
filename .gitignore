@@ -1,0 +1,41 @@
+# Raw C2DB is not redistributed (see download_data.py). Never commit it.
+data/raw/
+*.tar.gz
+c2db.db
+
+# Scratch / extracted trees
+scratch/
+c2db_tree/
+data/interim/
+
+# Caches that are re-downloadable
+cache/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+*.egg-info/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# LaTeX build products
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+!logs/*.log
+
+# Regenerable figure rasters. Only the PDFs are committed (Elektrik accepts
+# PDF only); run  python run_all.py --figures  to rebuild TIFF/PNG.
+figures/*.tiff
+figures/*.png

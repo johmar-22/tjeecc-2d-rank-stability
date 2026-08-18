@@ -1,0 +1,12 @@
+stage,n
+all rows,16905
+dyn_stab == 'Yes',4791
+gap > 0.3 eV,2656
+ehull < 0.2 eV/atom,2560
+emass_cbm & emass_vbm present,2099
+0.01 < m* < 10 (drops inf),1796
+gap_hse present,1775
+is_magnetic == 0,1612
+dedup on base_uid,1493
++ polarizability,1010
++ G0W0 gap,145

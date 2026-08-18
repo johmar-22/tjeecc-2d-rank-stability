@@ -1,0 +1,45 @@
+{
+  "electron_mass_c2db_vs_jarvis": {
+    "n": 103,
+    "median_ratio": 344.3572110349612,
+    "sigma_ln": 3.2544552863558804,
+    "mad_ln": 2.5520442084874078,
+    "REJECTED": "implausible ratio; unit or convention mismatch, not cross-code uncertainty"
+  },
+  "hole_mass_c2db_vs_jarvis": {
+    "n": 103,
+    "median_ratio": 285.882038695688,
+    "sigma_ln": 2.7369969135377583,
+    "mad_ln": 1.6829716846391132,
+    "REJECTED": "implausible ratio; unit or convention mismatch, not cross-code uncertainty"
+  },
+  "permittivity_c2db_vs_jarvis": {
+    "n": 101,
+    "median_ratio": 0.2871434463172955,
+    "sigma_ln": 0.4895252674867265,
+    "mad_ln": 0.48686170292106845,
+    "REJECTED": "implausible ratio; unit or convention mismatch, not cross-code uncertainty"
+  },
+  "gap_tbmbj_vs_hse": {
+    "n": 29,
+    "median_ratio": 0.8709236846824236,
+    "sigma_ln": 0.31107379903305027,
+    "mad_ln": 0.23715769710361254
+  },
+  "polarizability_c2db_vs_jarvis": {
+    "n": 101,
+    "median_ratio": 1.1944209076376613,
+    "sigma_ln": 0.3932813111834321,
+    "mad_ln": 0.0705278043424032,
+    "note": "JARVIS eps inverted to polarizability via alpha=(eps-1)L/4pi to remove supercell vacuum dilution before comparison"
+  },
+  "effective_mass_ASSUMED": {
+    "sigma_ln": 0.2,
+    "basis": "assumed, not measured. JARVIS avg_elec_mass was rejected (see above). 0.20 corresponds to about 20% 1-sigma spread, the order of magnitude reported for effective-mass differences between semilocal functionals.",
+    "REQUIRED_ACTION": "state explicitly in Methods as an assumption and report results at sigma_ln = 0.10, 0.20, 0.40 as a robustness check"
+  },
+  "polarizability_FINAL": {
+    "sigma_ln": 0.19,
+    "basis": "robust sigma_ln 0.071 from 101 C2DB<->JARVIS polarizability pairs, combined in quadrature with the systematic median offset ln(1.194)=0.177 since neither code is known to be correct"
+  }
+}

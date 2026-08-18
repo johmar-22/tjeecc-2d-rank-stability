@@ -1,0 +1,6 @@
+formula,I_ON_uA_um,L_g_nm,V_DD_V,I_OFF_nA_um,gate_geometry,method,citation,doi,table_or_figure,notes
+MoS2,,,,,,DFT-NEGF ballistic,,,,
+WSe2,,,,,,DFT-NEGF ballistic,,,,
+HfS2,,,,,,DFT-NEGF ballistic,,,,
+ZrS2,,,,,,DFT-NEGF ballistic,,,,
+P,,,,,,DFT-NEGF ballistic,,,,

@@ -1,0 +1,14 @@
+{
+  "generated_utc": "2026-08-16T11:19:49Z",
+  "archive_bytes": 449561496,
+  "archive_bytes_expected": 449561496,
+  "directories": 31491,
+  "total_files": 54457,
+  "target_file_counts": {
+    "emass.json": 3664,
+    "results-asr.stiffness.json": 8462,
+    "results-asr.deformationpotentials.json": 0
+  },
+  "deformation_potential_route": false,
+  "dp_threshold": 500
+}

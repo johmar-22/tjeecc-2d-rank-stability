@@ -1,0 +1,9 @@
+formula,I_ON,L_g,V_DD,I_OFF_uA,EOT,cls,ptype,cite,doi
+MoS2,2133,6.0,0.57,0.1,0.45,EMA-NEGF,False,"Ni et al., Adv. Electron. Mater. 2, 1600191 (2016), Table 1, row 'SE (EMA) DG[24]' (phonon-corrected)",10.1002/aelm.201600191
+MoS2,2100,8.0,0.6,0.1,0.5,EMA-NEGF,False,"Ni et al., Adv. Electron. Mater. 2, 1600191 (2016), Table 1, row 'SE (EMA) DG[30]'",10.1002/aelm.201600191
+MoS2,348,10.0,0.5,0.1,0.5,DFT-NEGF,False,"Ni et al., Adv. Electron. Mater. 2, 1600191 (2016), Table 2, DG, ballistic, Ti electrodes",10.1002/aelm.201600191
+MoS2,273,8.0,0.5,0.1,0.5,DFT-NEGF,False,"Ni et al. (2016), Table 2",10.1002/aelm.201600191
+MoS2,221,6.0,0.5,0.1,0.5,DFT-NEGF,False,"Ni et al. (2016), Table 2",10.1002/aelm.201600191
+WSe2,1464,5.0,0.64,0.1,0.48,DFT-NEGF,True,"Sun et al., ACS Appl. Mater. Interfaces 12, 20633 (2020), Table 1, DG ML WSe2 p-type, L_UL = 0",10.1021/acsami.0c04008
+WSe2,1302,7.0,0.69,0.1,0.48,DFT-NEGF,True,"Sun et al. (2020), Table 1",10.1021/acsami.0c04008
+WSe2,1292,9.0,0.72,0.1,0.48,DFT-NEGF,True,"Sun et al. (2020), Table 1",10.1021/acsami.0c04008

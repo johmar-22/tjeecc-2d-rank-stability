@@ -1,0 +1,24 @@
+# TJEECC - rank stability of 2D transistor channel screening
+# Pinned to the versions used for the results in the paper.
+# Install with:  pip install -r requirements.txt
+#
+# jax / jaxlib are intentionally NOT pinned here. Install the build that
+# matches your hardware first (see https://docs.jax.dev/en/latest/installation.html);
+# numpyro will use whatever jax is already present. On CPU:
+#     pip install "jax[cpu]"
+# The gap-calibration stage needs jax; every other stage does not.
+
+numpy==2.0.2
+scipy==1.13.1
+pandas==2.2.2
+pyarrow==17.0.0
+matplotlib==3.9.2
+tqdm==4.66.5
+
+ase==3.23.0
+pymatgen==2024.8.9
+jarvis-tools==2024.10.30
+
+numpyro==0.15.3
+arviz==0.19.0
+SALib==1.5.1

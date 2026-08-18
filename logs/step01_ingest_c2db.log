@@ -1,0 +1,1244 @@
+2026-08-16 07:48:24 | INFO    | === SESSION START: step01_ingest_c2db ===
+2026-08-16 07:48:24 | INFO    | UTC time        : 2026-08-16T07:48:24+00:00
+2026-08-16 07:48:24 | INFO    | Python          : 3.12.13 (Linux-6.6.122+-x86_64-with-glibc2.35)
+2026-08-16 07:48:24 | INFO    | Seed            : 20260815
+2026-08-16 07:48:24 | INFO    | ROOT            : /content/drive/MyDrive/TJEECC
+2026-08-16 07:48:24 | INFO    | Log file        : /content/drive/MyDrive/TJEECC/logs/step01_ingest_c2db.log
+2026-08-16 07:48:24 | INFO    | --- package versions ---
+2026-08-16 07:48:24 | INFO    |   ase           : 3.29.0
+2026-08-16 07:48:24 | INFO    |   pymatgen      : 2026.5.4
+2026-08-16 07:48:24 | INFO    |   jarvis-tools  : 2026.6.12
+2026-08-16 07:48:24 | INFO    |   SALib         : 1.5.2
+2026-08-16 07:48:24 | INFO    |   numpyro       : 0.21.0
+2026-08-16 07:48:24 | INFO    |   arviz         : 0.22.0
+2026-08-16 07:48:24 | INFO    |   tqdm          : 4.67.3
+2026-08-16 07:48:24 | INFO    |   pyarrow       : 18.1.0
+2026-08-16 07:48:24 | INFO    |   numpy         : 2.0.2
+2026-08-16 07:48:24 | INFO    |   scipy         : 1.16.3
+2026-08-16 07:48:24 | INFO    |   pandas        : 2.2.2
+2026-08-16 07:48:24 | INFO    |   matplotlib    : 3.10.0
+2026-08-16 07:48:24 | INFO    |   jax           : 0.7.2
+2026-08-16 07:48:24 | INFO    |   jaxlib        : 0.7.2
+2026-08-16 07:48:24 | INFO    | --- hardware ---
+2026-08-16 07:48:24 | INFO    |   /content disk : 188.5 GB free of 235.7 GB (47.2 GB used)
+2026-08-16 07:48:24 | INFO    |   Drive         : 179.1 GB free of 235.7 GB
+2026-08-16 07:48:24 | INFO    |   RAM           : 51.0 GB total, 49.4 GB available
+2026-08-16 07:48:24 | INFO    |   CPU cores     : 8
+2026-08-16 07:48:24 | INFO    |   GPU           : Tesla T4, 15360 MiB, 580.82.07
+2026-08-16 07:48:27 | INFO    |   JAX backend   : gpu  devices=[CudaDevice(id=0)]
+2026-08-16 07:48:27 | INFO    |   MCMC plan     : chain_method='vectorized' (single GPU)
+2026-08-16 07:50:55 | INFO    | === SESSION START: step01_ingest_c2db ===
+2026-08-16 07:50:55 | INFO    | UTC time        : 2026-08-16T07:50:55+00:00
+2026-08-16 07:50:55 | INFO    | Python          : 3.12.13 (Linux-6.6.122+-x86_64-with-glibc2.35)
+2026-08-16 07:50:55 | INFO    | Seed            : 20260815
+2026-08-16 07:50:55 | INFO    | ROOT            : /content/drive/MyDrive/TJEECC
+2026-08-16 07:50:55 | INFO    | Log file        : /content/drive/MyDrive/TJEECC/logs/step01_ingest_c2db.log
+2026-08-16 07:50:55 | INFO    | --- package versions ---
+2026-08-16 07:50:55 | INFO    |   ase           : 3.29.0
+2026-08-16 07:50:55 | INFO    |   pymatgen      : 2026.5.4
+2026-08-16 07:50:55 | INFO    |   jarvis-tools  : 2026.6.12
+2026-08-16 07:50:55 | INFO    |   SALib         : 1.5.2
+2026-08-16 07:50:55 | INFO    |   numpyro       : 0.21.0
+2026-08-16 07:50:55 | INFO    |   arviz         : 0.22.0
+2026-08-16 07:50:55 | INFO    |   tqdm          : 4.67.3
+2026-08-16 07:50:55 | INFO    |   pyarrow       : 18.1.0
+2026-08-16 07:50:55 | INFO    |   numpy         : 2.0.2
+2026-08-16 07:50:55 | INFO    |   scipy         : 1.16.3
+2026-08-16 07:50:55 | INFO    |   pandas        : 2.2.2
+2026-08-16 07:50:55 | INFO    |   matplotlib    : 3.10.0
+2026-08-16 07:50:55 | INFO    |   jax           : 0.7.2
+2026-08-16 07:50:55 | INFO    |   jaxlib        : 0.7.2
+2026-08-16 07:50:55 | INFO    | --- hardware ---
+2026-08-16 07:50:55 | INFO    |   /content disk : 188.5 GB free of 235.7 GB (47.2 GB used)
+2026-08-16 07:50:55 | INFO    |   Drive         : 179.1 GB free of 235.7 GB
+2026-08-16 07:50:55 | INFO    |   RAM           : 51.0 GB total, 49.1 GB available
+2026-08-16 07:50:55 | INFO    |   CPU cores     : 8
+2026-08-16 07:50:55 | INFO    |   GPU           : Tesla T4, 15360 MiB, 580.82.07
+2026-08-16 07:50:55 | INFO    |   JAX backend   : gpu  devices=[CudaDevice(id=0)]
+2026-08-16 07:50:55 | INFO    |   MCMC plan     : chain_method='vectorized' (single GPU)
+2026-08-16 07:50:55 | INFO    |   numpyro plat  : cpu
+2026-08-16 07:50:55 | INFO    |   jax_enable_x64: True
+2026-08-16 07:50:55 | INFO    |   NOTE: Tesla T4 has weak FP64. With jax_enable_x64=True the Step 4 MCMC may run faster on a CPU high-RAM runtime. Time both before choosing.
+2026-08-16 07:50:55 | INFO    | --- data files ---
+2026-08-16 07:50:55 | INFO    |   OK      c2db.db        0.07 GB
+2026-08-16 07:50:55 | INFO    |   MISSING c2db.tar.gz    expected at /content/drive/MyDrive/TJEECC/data/raw/c2db.tar.gz
+2026-08-16 07:50:55 | INFO    | === BOOTSTRAP COMPLETE: step01_ingest_c2db ===
+
+2026-08-16 08:58:26 | INFO    | === SESSION START: step01_ingest_c2db ===
+2026-08-16 08:58:26 | INFO    | UTC time        : 2026-08-16T08:58:26+00:00
+2026-08-16 08:58:26 | INFO    | Python          : 3.12.13 (Linux-6.6.122+-x86_64-with-glibc2.35)
+2026-08-16 08:58:26 | INFO    | Seed            : 20260815
+2026-08-16 08:58:26 | INFO    | ROOT            : /content/drive/MyDrive/TJEECC
+2026-08-16 08:58:26 | INFO    | Log file        : /content/drive/MyDrive/TJEECC/logs/step01_ingest_c2db.log
+2026-08-16 08:58:26 | INFO    | --- package versions ---
+2026-08-16 08:58:26 | INFO    |   ase           : 3.29.0
+2026-08-16 08:58:26 | INFO    |   pymatgen      : 2026.5.4
+2026-08-16 08:58:26 | INFO    |   jarvis-tools  : 2026.6.12
+2026-08-16 08:58:26 | INFO    |   SALib         : 1.5.2
+2026-08-16 08:58:26 | INFO    |   numpyro       : 0.21.0
+2026-08-16 08:58:26 | INFO    |   arviz         : 0.22.0
+2026-08-16 08:58:26 | INFO    |   tqdm          : 4.67.3
+2026-08-16 08:58:26 | INFO    |   pyarrow       : 18.1.0
+2026-08-16 08:58:26 | INFO    |   numpy         : 2.0.2
+2026-08-16 08:58:26 | INFO    |   scipy         : 1.16.3
+2026-08-16 08:58:26 | INFO    |   pandas        : 2.2.2
+2026-08-16 08:58:26 | INFO    |   matplotlib    : 3.10.0
+2026-08-16 08:58:26 | INFO    |   jax           : 0.7.2
+2026-08-16 08:58:26 | INFO    |   jaxlib        : 0.7.2
+2026-08-16 08:58:26 | INFO    | --- hardware ---
+2026-08-16 08:58:26 | INFO    |   /content disk : 188.5 GB free of 235.7 GB (47.2 GB used)
+2026-08-16 08:58:26 | INFO    |   Drive         : 179.1 GB free of 235.7 GB
+2026-08-16 08:58:26 | INFO    |   RAM           : 51.0 GB total, 48.9 GB available
+2026-08-16 08:58:26 | INFO    |   CPU cores     : 8
+2026-08-16 08:58:26 | INFO    |   GPU           : Tesla T4, 15360 MiB, 580.82.07
+2026-08-16 08:58:26 | INFO    |   JAX backend   : gpu  devices=[CudaDevice(id=0)]
+2026-08-16 08:58:26 | INFO    |   MCMC plan     : chain_method='vectorized' (single GPU)
+2026-08-16 08:58:26 | INFO    |   numpyro plat  : cuda
+2026-08-16 08:58:26 | INFO    |   jax_enable_x64: True
+2026-08-16 08:58:26 | INFO    |   NOTE: Tesla T4 has weak FP64. With jax_enable_x64=True the Step 4 MCMC may run faster on a CPU high-RAM runtime. Time both before choosing.
+2026-08-16 08:58:26 | INFO    | --- data files ---
+2026-08-16 08:58:26 | INFO    |   OK      c2db.db        0.07 GB
+2026-08-16 08:58:26 | INFO    |   OK      c2db.tar.gz    0.42 GB
+2026-08-16 08:58:26 | INFO    | === BOOTSTRAP COMPLETE: step01_ingest_c2db ===
+
+2026-08-16 08:59:18 | INFO    | [cell1] Copying 429 MB from Drive to local disk...
+2026-08-16 08:59:33 | INFO    | [cell1] Copy done in 15 s (28 MB/s)
+2026-08-16 08:59:33 | INFO    | [cell1] Extracting to /content/c2db_tree (streaming)...
+2026-08-16 11:19:49 | INFO    | [cell1] Extracted 85,948 members in 140.3 min
+2026-08-16 11:19:49 | INFO    | [cell1] Auditing extracted tree...
+2026-08-16 11:19:49 | INFO    | [cell1] Walk completed in 0 s
+2026-08-16 11:19:49 | INFO    | --- extraction audit ---
+2026-08-16 11:19:49 | INFO    |   directories                        : 31,491
+2026-08-16 11:19:49 | INFO    |   total files                        : 54,457
+2026-08-16 11:19:49 | INFO    |   emass.json                         : 3,664
+2026-08-16 11:19:49 | INFO    |   results-asr.stiffness.json         : 8,462
+2026-08-16 11:19:49 | INFO    |   results-asr.deformationpotentials.json: 0
+2026-08-16 11:19:49 | INFO    | --- decision gate ---
+2026-08-16 11:19:49 | INFO    |   FAIL: only 0 deformation-potential files (< 500). Use the Step 8 fallback: fix the mean free path parametrically, sweep it, and report ballistic-limit results as primary with quasi-ballistic as a sensitivity. Record this number; it belongs in the Methods section.
+2026-08-16 11:19:49 | INFO    | [cell1] Audit written to /content/drive/MyDrive/TJEECC/data/processed/c2db_tree_audit.json
+2026-08-16 11:19:49 | INFO    | [cell1] /content/c2db_tree/materials/ contains 312 stoichiometry directories. Step 2 walks this path.
+2026-08-16 11:19:49 | INFO    | [cell1] DONE
+
+2026-08-16 11:27:35 | INFO    | ======================================================================
+2026-08-16 11:27:35 | INFO    | STEP 1: ingesting c2db.db
+2026-08-16 11:27:39 | INFO    |   pivoted: 16,905 rows x 83 columns
+2026-08-16 11:27:40 | INFO    |   uid -> base_uid sample (EYEBALL THESE before trusting the dedup):
+2026-08-16 11:27:40 | INFO    |     1InNaAs2S6-1                 -> 1InNaAs2S6
+2026-08-16 11:27:40 | INFO    |     1CuScAs2S6-1                 -> 1CuScAs2S6
+2026-08-16 11:27:40 | INFO    |     2AgCrAs2O6-2                 -> 2AgCrAs2O6
+2026-08-16 11:27:40 | INFO    |     2AgCrAs2O6-1                 -> 2AgCrAs2O6
+2026-08-16 11:27:40 | INFO    |     1AlLiSb2Te6-1                -> 1AlLiSb2Te6
+2026-08-16 11:27:40 | INFO    |     1AuSbAs2Te6-1                -> 1AuSbAs2Te6
+2026-08-16 11:27:40 | INFO    |     1AgScP2S6-1                  -> 1AgScP2S6
+2026-08-16 11:27:40 | INFO    |     1AuBiP2Se6-1                 -> 1AuBiP2Se6
+2026-08-16 11:27:40 | INFO    |     1AuVP2Te6-1                  -> 1AuVP2Te6
+2026-08-16 11:27:40 | INFO    |     1AgCrP2Se6-1                 -> 1AgCrP2Se6
+2026-08-16 11:27:40 | INFO    |     1AgScAs2Te6-1                -> 1AgScAs2Te6
+2026-08-16 11:27:40 | INFO    |     2AsHP2O6-1                   -> 2AsHP2O6
+2026-08-16 11:27:40 | INFO    |   infinite emass_cbm: 132   emass_vbm: 130
+2026-08-16 11:27:40 | INFO    | --- screening waterfall ---
+2026-08-16 11:27:40 | INFO    |   all rows                                            : 16,905
+2026-08-16 11:27:40 | INFO    |   dyn_stab == 'Yes'                                   :  4,791
+2026-08-16 11:27:40 | INFO    |   gap > 0.3 eV                                        :  2,656
+2026-08-16 11:27:40 | INFO    |   ehull < 0.2 eV/atom                                 :  2,560
+2026-08-16 11:27:40 | INFO    |   emass_cbm & emass_vbm present                       :  2,099
+2026-08-16 11:27:40 | INFO    |   0.01 < m* < 10 (drops inf)                          :  1,796
+2026-08-16 11:27:40 | INFO    |   gap_hse present                                     :  1,775
+2026-08-16 11:27:40 | INFO    |   is_magnetic == 0                                    :  1,612
+2026-08-16 11:27:40 | INFO    |   dedup on base_uid (keep min hform)          :  1,493 (119 duplicate magnetic states dropped)
+2026-08-16 11:27:40 | INFO    |   ... of which have polarizability (full device model): 1,010
+2026-08-16 11:27:40 | INFO    |   ... of which have a G0W0 gap (calibration anchor)   : 145
+2026-08-16 11:27:41 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/interim/c2db_screened.parquet   (6 s)
+2026-08-16 11:27:41 | INFO    | ======================================================================
+2026-08-16 11:27:41 | INFO    | STEP 2: harvesting per-material JSON
+2026-08-16 11:27:41 | INFO    |   found 16,905 material/magstate directories
+2026-08-16 11:27:49 | INFO    |   harvested 16,905 records in 8 s
+2026-08-16 11:27:49 | INFO    |   malformed JSON: 0   missing band-edge keys: 0
+2026-08-16 11:27:49 | INFO    |   with emass    : 3,532
+2026-08-16 11:27:49 | INFO    |   with stiffness: 8,462
+2026-08-16 11:27:49 | INFO    |   with defpot   : 0  <- expected 0
+2026-08-16 11:27:49 | INFO    | --- validation: m_dos self-consistency ---
+2026-08-16 11:27:49 | INFO    |   cbm: 83.4% within 2%  (n=3,532)
+2026-08-16 11:27:49 | INFO    |   *** FAIL: cbm self-consistency below 95%. The min/max mass extraction is wrong. Do not proceed to Step 5.
+2026-08-16 11:27:49 | INFO    |       worst offenders:
+       cbm_m_dos_file  cbm_m_dos_check       rel
+13556        1.274748         4.113126  2.226618
+11683        0.000003         0.000010  1.960768
+2055         0.389947         1.043431  1.675830
+4222         6.259685        13.006518  1.077823
+15387        3.594887         7.289996  1.027879
+2026-08-16 11:27:49 | INFO    |   vbm: 83.4% within 2%  (n=3,534)
+2026-08-16 11:27:49 | INFO    |   *** FAIL: vbm self-consistency below 95%. The min/max mass extraction is wrong. Do not proceed to Step 5.
+2026-08-16 11:27:49 | INFO    |       worst offenders:
+       vbm_m_dos_file  vbm_m_dos_check       rel
+14829        1.758442         5.148435  1.927839
+15945        9.724957        25.805039  1.653486
+9313         2.714709         6.355136  1.341001
+77           0.538546         1.252156  1.325069
+4148         0.795939         1.821425  1.288399
+2026-08-16 11:27:49 | INFO    |   cbm: m_cond > m_dos violations: 0  (must be 0)
+2026-08-16 11:27:49 | INFO    |   vbm: m_cond > m_dos violations: 0  (must be 0)
+2026-08-16 11:27:49 | INFO    | --- join coverage against the screened set ---
+2026-08-16 11:27:49 | INFO    |   screened materials      : 1,493
+2026-08-16 11:27:49 | INFO    |   with tree effective mass: 1,493 (100.0%)
+2026-08-16 11:27:49 | INFO    |   with tree stiffness     : 1,493 (100.0%)
+2026-08-16 11:27:49 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/c2db_enriched.parquet
+2026-08-16 11:27:49 | INFO    |   The extracted tree is no longer needed. Everything downstream reads this Parquet.
+2026-08-16 11:27:49 | INFO    | ======================================================================
+2026-08-16 11:27:49 | INFO    | CELL 2 DONE
+
+2026-08-16 11:33:15 | INFO    | [cell3] loaded 1,493 screened materials
+2026-08-16 11:33:15 | INFO    | --- deviation summary ---
+2026-08-16 11:33:15 | INFO    |   cbm: median=1.66e-16  p90=0.039  p99=0.362  frac<2%=84.7%
+2026-08-16 11:33:15 | INFO    |   vbm: median=1.84e-16  p90=0.051  p99=0.387  frac<2%=82.7%
+2026-08-16 11:33:15 | INFO    | --- hypothesis test: does warping explain the deviation? ---
+2026-08-16 11:33:15 | INFO    |   cbm: Spearman(rel, |warping|)    = +0.770  p=8.60e-293
+2026-08-16 11:33:15 | INFO    |   cbm: Spearman(rel, anisotropy)   = +0.367  p=9.97e-49
+2026-08-16 11:33:15 | INFO    |   cbm: barrier_found=True median rel=0.000 (n=246) vs False=0.000 (n=1247), Mann-Whitney p=2.02e-05
+2026-08-16 11:33:15 | INFO    |   cbm: median anisotropy  parabolic=1.69  non-parabolic=4.61
+2026-08-16 11:33:15 | INFO    |   vbm: Spearman(rel, |warping|)    = +0.771  p=2.52e-294
+2026-08-16 11:33:15 | INFO    |   vbm: Spearman(rel, anisotropy)   = +0.300  p=2.51e-32
+2026-08-16 11:33:15 | INFO    |   vbm: barrier_found=True median rel=0.000 (n=234) vs False=0.000 (n=1259), Mann-Whitney p=3.42e-03
+2026-08-16 11:33:15 | INFO    |   vbm: median anisotropy  parabolic=1.93  non-parabolic=4.59
+2026-08-16 11:33:15 | INFO    |   INTERPRETATION: strong positive Spearman correlations, and a higher median anisotropy in the non-parabolic group, support non-parabolicity rather than an extraction bug. Weak or absent correlation means we have a real bug and must re-examine the emass.json parsing.
+2026-08-16 11:33:15 | INFO    | --- device-ready set ---
+2026-08-16 11:33:15 | INFO    |   screened (Cell 2)                        : 1,493
+2026-08-16 11:33:15 | INFO    |   parabolic at both band edges (< 2%)      : 1,085 (72.7%)
+2026-08-16 11:33:15 | INFO    |   ... and with polarizability (full model) : 755
+2026-08-16 11:33:15 | INFO    |   ... and with a G0W0 gap (calibration)    : 129
+2026-08-16 11:33:15 | INFO    |   diagnosis -> /content/drive/MyDrive/TJEECC/data/processed/parabolicity_diagnosis.csv
+2026-08-16 11:33:15 | INFO    |   device-ready set -> /content/drive/MyDrive/TJEECC/data/processed/c2db_device_ready.parquet
+2026-08-16 11:33:15 | INFO    | --- downstream convention (do not deviate) ---
+2026-08-16 11:33:15 | INFO    |   DOS mass          m_d  = <edge>_m_dos_file   (authoritative, C2DB)
+2026-08-16 11:33:15 | INFO    |   conductivity mass m_c  = <edge>_m_cond       (harmonic mean, valid on the parabolic subset only)
+2026-08-16 11:33:15 | INFO    |   n_s and C_Q use m_d ; the Natori current uses m_c
+2026-08-16 11:33:15 | INFO    | [cell3] DONE
+
+2026-08-16 11:38:38 | INFO    | [cell4] device-ready set: 1,085 materials
+2026-08-16 11:38:38 | INFO    | --- preflight: Step 6 validation channels ---
+2026-08-16 11:38:38 | INFO    |   LOST MoS2         formula=MoS2   screened=0   device_ready=0   min_aniso_cbm=nan
+2026-08-16 11:38:38 | INFO    |   LOST WS2          formula=WS2    screened=0   device_ready=0   min_aniso_cbm=nan
+2026-08-16 11:38:38 | INFO    |   LOST WSe2         formula=WSe2   screened=0   device_ready=0   min_aniso_cbm=nan
+2026-08-16 11:38:38 | INFO    |   LOST MoSe2        formula=MoSe2  screened=0   device_ready=0   min_aniso_cbm=nan
+2026-08-16 11:38:38 | INFO    |   OK   MoTe2        formula=MoTe2  screened=1   device_ready=1   min_aniso_cbm=1.01
+2026-08-16 11:38:38 | INFO    |   LOST phosphorene  formula=P      screened=0   device_ready=0   min_aniso_cbm=nan
+2026-08-16 11:38:38 | INFO    |   LOST InSe         formula=InSe   screened=0   device_ready=0   min_aniso_cbm=nan
+2026-08-16 11:38:38 | INFO    |   OK   hBN          formula=BN     screened=1   device_ready=1   min_aniso_cbm=1.00
+2026-08-16 11:38:38 | INFO    |   *** 6 validation channel(s) lost to the parabolicity cut: MoS2, WS2, WSe2, MoSe2, phosphorene, InSe
+2026-08-16 11:38:38 | INFO    |       Step 6 must use replacements from the device-ready set, and the anisotropy exclusion becomes a stated Limitation, not a footnote. Highly anisotropic channels (phosphorene above all) are outside the scope of a parabolic-band device model.
+2026-08-16 11:38:38 | INFO    | --- JARVIS dft_2d ---
+2026-08-16 11:38:38 | INFO    |   downloading dft_2d (first run only)...
+2026-08-16 11:38:43 | INFO    |   cached -> /content/drive/MyDrive/TJEECC/cache/jarvis/dft_2d.json
+2026-08-16 11:38:43 | INFO    |   1,103 JARVIS 2D entries
+2026-08-16 11:38:43 | INFO    |   AVAILABLE COLUMNS (inspect before selecting):
+2026-08-16 11:38:43 | INFO    |     jid                         spg_number                  spg_symbol                  formula                   
+2026-08-16 11:38:43 | INFO    |     formation_energy_peratom    func                        optb88vdw_bandgap           atoms                     
+2026-08-16 11:38:43 | INFO    |     slme                        magmom_oszicar              spillage                    elastic_tensor            
+2026-08-16 11:38:43 | INFO    |     effective_masses_300K       kpoint_length_unit          maxdiff_mesh                maxdiff_bz                
+2026-08-16 11:38:43 | INFO    |     encut                       optb88vdw_total_energy      epsx                        epsy                      
+2026-08-16 11:38:43 | INFO    |     epsz                        mepsx                       mepsy                       mepsz                     
+2026-08-16 11:38:43 | INFO    |     modes                       magmom_outcar               max_efg                     avg_elec_mass             
+2026-08-16 11:38:43 | INFO    |     avg_hole_mass               icsd                        dfpt_piezo_max_eij          dfpt_piezo_max_dij        
+2026-08-16 11:38:43 | INFO    |     dfpt_piezo_max_dielectric   dfpt_piezo_max_dielectric_electronic  dfpt_piezo_max_dielectric_ionic  max_ir_mode               
+2026-08-16 11:38:43 | INFO    |     min_ir_mode                 n-Seebeck                   p-Seebeck                   n-powerfact               
+2026-08-16 11:38:43 | INFO    |     p-powerfact                 ncond                       pcond                       nkappa                    
+2026-08-16 11:38:43 | INFO    |     pkappa                      ehull                       Tc_supercon                 dimensionality            
+2026-08-16 11:38:43 | INFO    |     efg                         xml_data_link               typ                         exfoliation_energy        
+2026-08-16 11:38:43 | INFO    |     spg                         crys                        density                     poisson                   
+2026-08-16 11:38:43 | INFO    |     raw_files                   nat                         bulk_modulus_kv             shear_modulus_gv          
+2026-08-16 11:38:43 | INFO    |     mbj_bandgap                 hse_gap                     reference                   search                    
+2026-08-16 11:38:43 | INFO    |     desc                      
+2026-08-16 11:38:43 | INFO    |   coerced optb88vdw_bandgap         :     0 'na' sentinels -> NaN,  1103 usable
+2026-08-16 11:38:43 | INFO    |   coerced mbj_bandgap               :   857 'na' sentinels -> NaN,   246 usable
+2026-08-16 11:38:43 | INFO    |   coerced epsx                      :   216 'na' sentinels -> NaN,   887 usable
+2026-08-16 11:38:43 | INFO    |   coerced epsy                      :   216 'na' sentinels -> NaN,   887 usable
+2026-08-16 11:38:43 | INFO    |   coerced epsz                      :   216 'na' sentinels -> NaN,   887 usable
+2026-08-16 11:38:43 | INFO    |   coerced formation_energy_peratom  :     0 'na' sentinels -> NaN,  1103 usable
+2026-08-16 11:38:43 | INFO    |   coerced ehull                     :     0 'na' sentinels -> NaN,  1103 usable
+2026-08-16 11:38:43 | INFO    |   coerced magmom_outcar             :     0 'na' sentinels -> NaN,  1103 usable
+2026-08-16 11:38:43 | INFO    | --- building structures ---
+2026-08-16 11:38:49 | INFO    |   C2DB structures: 1,085 in 6 s
+2026-08-16 11:38:50 | INFO    |   JARVIS structures: 1,103 in 1 s
+2026-08-16 11:38:50 | INFO    | --- bucketing by reduced composition ---
+2026-08-16 11:38:50 | INFO    |   879 distinct JARVIS compositions
+2026-08-16 11:38:50 | INFO    | --- matching ---
+2026-08-16 11:38:53 | INFO    |   297 comparisons in 0.0 min
+2026-08-16 11:38:53 | INFO    |   matched          : 131
+2026-08-16 11:38:53 | INFO    |   polymorph ambiguous (>1 JARVIS hit): 29  <- report this rate in the paper
+2026-08-16 11:38:53 | INFO    |   unmatched        : 954
+2026-08-16 11:38:53 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/c2db_jarvis_matched.parquet
+2026-08-16 11:38:53 | INFO    | --- hand check on reference channels ---
+2026-08-16 11:38:53 | INFO    |   none MoS2         (absent from device-ready set or unmatched)
+2026-08-16 11:38:53 | INFO    |   none WS2          (absent from device-ready set or unmatched)
+2026-08-16 11:38:53 | INFO    |   none WSe2         (absent from device-ready set or unmatched)
+2026-08-16 11:38:53 | INFO    |   none MoSe2        (absent from device-ready set or unmatched)
+2026-08-16 11:38:53 | INFO    |   OK   MoTe2        1MoTe2-1         -> JVASP-670  C2DB PBE=0.932  HSE=1.370  JARVIS OptB88=1.229  TBmBJ=nan
+2026-08-16 11:38:53 | INFO    |   none phosphorene  (absent from device-ready set or unmatched)
+2026-08-16 11:38:53 | INFO    |   none InSe         (absent from device-ready set or unmatched)
+2026-08-16 11:38:53 | INFO    |   OK   hBN          1BN-1            -> JVASP-76649  C2DB PBE=4.667  HSE=5.675  JARVIS OptB88=4.384  TBmBJ=5.917
+2026-08-16 11:38:53 | INFO    |   If MoS2 does not appear above, the matcher settings are wrong. Do not proceed to Step 4 until at least MoS2 and WS2 match.
+2026-08-16 11:38:53 | INFO    | --- cross-database axis size ---
+2026-08-16 11:38:53 | INFO    |   matched with any JARVIS entry     : 131
+2026-08-16 11:38:53 | INFO    |   matched AND has a TBmBJ gap       : 29  <- usable for sigma_impl
+2026-08-16 11:38:53 | INFO    |   WARNING: fewer than 50 usable cross-database pairs. The secondary axis becomes anecdotal. Report it as such, or drop it and rely on the within-C2DB functional axis alone, which is the stronger result anyway.
+2026-08-16 11:38:53 | INFO    | [cell4] DONE
+
+2026-08-16 11:46:35 | INFO    | --- formula repair: before vs after ---
+2026-08-16 11:46:35 | INFO    |   1MoS2-1      old='S2Mo'  ->  new='MoS2'
+2026-08-16 11:46:35 | INFO    |   1WS2-1       old='S2W'  ->  new='WS2'
+2026-08-16 11:46:35 | INFO    |   1WSe2-1      old='Se2W'  ->  new='WSe2'
+2026-08-16 11:46:35 | INFO    |   1MoTe2-1     old='MoTe2'  ->  new='Te2Mo'
+2026-08-16 11:46:35 | INFO    |   1BN-1        old='BN'  ->  new='BN'
+2026-08-16 11:46:35 | INFO    |   repaired c2db_enriched.parquet (1,493) and c2db_device_ready.parquet (1,085)
+2026-08-16 11:46:35 | INFO    | --- preflight (corrected): Step 6 validation channels ---
+2026-08-16 11:46:35 | INFO    |   OK   MoS2    screened=1   device_ready=1   min_aniso=1.00  min_rel=nan  1MoS2-1
+2026-08-16 11:46:35 | INFO    |   OK   WS2     screened=1   device_ready=1   min_aniso=1.02  min_rel=nan  1WS2-1
+2026-08-16 11:46:35 | INFO    |   OK   WSe2    screened=1   device_ready=1   min_aniso=1.02  min_rel=nan  1WSe2-1
+2026-08-16 11:46:35 | INFO    |   OK   MoSe2   screened=1   device_ready=1   min_aniso=1.00  min_rel=nan  1MoSe2-1
+2026-08-16 11:46:35 | INFO    |   OK   MoTe2   screened=1   device_ready=1   min_aniso=1.01  min_rel=nan  1MoTe2-1
+2026-08-16 11:46:35 | INFO    |   OK   WTe2    screened=1   device_ready=1   min_aniso=1.00  min_rel=nan  1WTe2-1
+2026-08-16 11:46:35 | INFO    |   OK   P       screened=2   device_ready=2   min_aniso=6.80  min_rel=nan  4P-1,2P-1
+2026-08-16 11:46:35 | INFO    |   CUT  InSe    screened=1   device_ready=0   min_aniso=1.00  min_rel=nan  
+2026-08-16 11:46:35 | INFO    |   OK   GaSe    screened=1   device_ready=1   min_aniso=1.01  min_rel=nan  2GaSe-1
+2026-08-16 11:46:35 | INFO    |   OK   SnS2    screened=1   device_ready=1   min_aniso=3.08  min_rel=nan  1SnS2-1
+2026-08-16 11:46:35 | INFO    |   OK   ZrS2    screened=2   device_ready=2   min_aniso=3.13  min_rel=nan  1ZrS2-1,2ZrS2-2
+2026-08-16 11:46:35 | INFO    |   OK   HfS2    screened=1   device_ready=1   min_aniso=10.09  min_rel=nan  1HfS2-1
+2026-08-16 11:46:35 | INFO    |   OK   BN      screened=1   device_ready=1   min_aniso=1.00  min_rel=nan  1BN-1
+2026-08-16 11:46:35 | INFO    |   OK   SnSe    screened=2   device_ready=2   min_aniso=1.10  min_rel=nan  2SeSn-1,1SeSn-1
+2026-08-16 11:46:35 | INFO    |   ABSENT Bi2Se3  screened=0   device_ready=0   min_aniso=nan  min_rel=nan  
+2026-08-16 11:46:35 | INFO    |   OK     = usable as a Step 6 validation reference
+2026-08-16 11:46:35 | INFO    |   CUT    = present but removed by the parabolicity filter (a real, reportable Limitation)
+2026-08-16 11:46:35 | INFO    |   ABSENT = not in C2DB under this composition at all
+2026-08-16 11:46:35 | INFO    | --- cross-database uncertainty scales ---
+2026-08-16 11:46:36 | INFO    |   electron_mass_c2db_vs_jarvis: n=103  median ratio=344.357  sigma_ln=3.254  robust sigma_ln=2.552
+2026-08-16 11:46:36 | INFO    |   hole_mass_c2db_vs_jarvis    : n=103  median ratio=285.882  sigma_ln=2.737  robust sigma_ln=1.683
+2026-08-16 11:46:36 | INFO    |   permittivity_c2db_vs_jarvis : n=101  median ratio=0.287  sigma_ln=0.490  robust sigma_ln=0.487
+2026-08-16 11:46:36 | INFO    |   gap_tbmbj_vs_hse            : n=29   median ratio=0.871  sigma_ln=0.311  robust sigma_ln=0.237
+2026-08-16 11:46:36 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/uncertainty_scales.json
+2026-08-16 11:46:36 | INFO    | --- verdict on the JARVIS axis ---
+2026-08-16 11:46:36 | INFO    |   matched pairs                      : 131
+2026-08-16 11:46:36 | INFO    |   with a TBmBJ gap (gap axis)        : 29
+2026-08-16 11:46:36 | INFO    |   with avg_elec_mass (mass axis)     : 105
+2026-08-16 11:46:36 | INFO    |   RECOMMENDATION: the TBmBJ gap overlap is too thin to carry a distribution. Demote the cross-database GAP comparison to a one-sentence consistency check plus a supplementary figure, and rely on the within-C2DB PBE/HSE/G0W0 axis for the gap, which is the controlled comparison and the stronger result. Keep the JARVIS MASS and PERMITTIVITY comparison: it is the only empirical basis for sigma on those two parameters and it feeds Step 4 directly.
+2026-08-16 11:46:36 | INFO    | [cell5] DONE
+
+2026-08-16 11:50:45 | INFO    | ======================================================================
+2026-08-16 11:50:45 | INFO    | H1: JARVIS effective-mass units / definition
+2026-08-16 11:50:45 | INFO    | --- j_avg_elec_mass ---
+2026-08-16 11:50:45 | INFO    |   n=105  min=0  p25=52.56  median=239.2  p75=1677  max=3.092e+06
+2026-08-16 11:50:45 | INFO    |   negative values: 0   |values|>100: 70
+2026-08-16 11:50:45 | INFO    |   C2DB cbm_m_dos_file: median=0.6128  range=[0.01029, 7.595]
+2026-08-16 11:50:45 | INFO    | --- j_avg_hole_mass ---
+2026-08-16 11:50:45 | INFO    |   n=105  min=0  p25=48.06  median=225.6  p75=909.9  max=2.115e+05
+2026-08-16 11:50:45 | INFO    |   negative values: 0   |values|>100: 69
+2026-08-16 11:50:45 | INFO    |   C2DB vbm_m_dos_file: median=0.8331  range=[0.0863, 4.588]
+2026-08-16 11:50:45 | INFO    | --- ground-truth spot check (literature m* in m_0) ---
+2026-08-16 11:50:45 | INFO    |   mat      lit m_e  C2DB m_dos  JARVIS avg    J/C2DB    J/lit
+2026-08-16 11:50:45 | INFO    |   MoS2    not in matched set
+2026-08-16 11:50:45 | INFO    |   WS2     not in matched set
+2026-08-16 11:50:45 | INFO    |   WSe2    not in matched set
+2026-08-16 11:50:45 | INFO    |   MoSe2   not in matched set
+2026-08-16 11:50:45 | INFO    |   BN      not in matched set
+2026-08-16 11:50:45 | INFO    |   READ THIS: if C2DB m_dos sits near the literature value and the JARVIS column is 2-3 orders larger, JARVIS avg_elec_mass is NOT a band mass in m_0 for this dataset. It cannot be used to set sigma on m*. Do not 'rescale' it to force agreement; that would be fitting a unit conversion to make a number look right.
+2026-08-16 11:50:45 | INFO    | ======================================================================
+2026-08-16 11:50:45 | INFO    | H2: vacuum dilution of the JARVIS dielectric constant
+2026-08-16 11:50:45 | INFO    |   usable pairs: 101
+2026-08-16 11:50:45 | INFO    |   JARVIS supercell height L: median=27.2 A  range=[21.1, 35.6]
+2026-08-16 11:50:45 | INFO    |   C2DB slab thickness t    : median=3.6 A
+2026-08-16 11:50:45 | INFO    |   predicted dilution t/L   : 0.139
+2026-08-16 11:50:45 | INFO    |   observed eps ratio J/C2DB: 0.287
+2026-08-16 11:50:45 | INFO    |   If those last two agree, H2 is confirmed: the 0.287 was a supercell convention, not a physical disagreement.
+2026-08-16 11:50:45 | INFO    | --- polarizability, the like-for-like comparison ---
+2026-08-16 11:50:45 | INFO    |   n=101  median ratio=1.194  sigma_ln=0.393  robust sigma_ln=0.071
+2026-08-16 11:50:45 | INFO    |   A median ratio near 1 with sigma_ln of order 0.1-0.3 is a credible cross-code uncertainty and IS usable for Step 4.
+2026-08-16 11:50:45 | INFO    | ======================================================================
+2026-08-16 11:50:45 | INFO    |   rewrote /content/drive/MyDrive/TJEECC/data/processed/uncertainty_scales.json
+2026-08-16 11:50:45 | INFO    | --- final Step 4 inputs ---
+2026-08-16 11:50:45 | INFO    |   electron_mass_c2db_vs_jarvis           [REJECTED]  sigma_ln=3.254
+2026-08-16 11:50:45 | INFO    |   hole_mass_c2db_vs_jarvis               [REJECTED]  sigma_ln=2.737
+2026-08-16 11:50:45 | INFO    |   permittivity_c2db_vs_jarvis            [REJECTED]  sigma_ln=0.490
+2026-08-16 11:50:45 | INFO    |   gap_tbmbj_vs_hse                       [measured]  sigma_ln=0.311
+2026-08-16 11:50:45 | INFO    |   polarizability_c2db_vs_jarvis          [measured]  sigma_ln=0.393
+2026-08-16 11:50:45 | INFO    |   effective_mass_ASSUMED                 [ASSUMED]  sigma_ln=0.200
+2026-08-16 11:50:45 | INFO    | [cell6] DONE
+
+2026-08-16 11:54:11 | INFO    | [step4] device-ready: 1,085
+2026-08-16 11:54:11 | INFO    | --- preflight: C2DB m_dos vs literature (m_0) ---
+2026-08-16 11:54:11 | INFO    |   OK  MoS2    C2DB=0.427  lit=0.47  rel=9%
+2026-08-16 11:54:11 | INFO    |   OK  WS2     C2DB=0.373  lit=0.31  rel=20%
+2026-08-16 11:54:11 | INFO    |   OK  WSe2    C2DB=0.353  lit=0.34  rel=4%
+2026-08-16 11:54:11 | INFO    |   OK  MoSe2   C2DB=0.492  lit=0.55  rel=11%
+2026-08-16 11:54:11 | INFO    |   OK  MoTe2   C2DB=0.472  lit=0.55  rel=14%
+2026-08-16 11:54:11 | INFO    |   OK  BN      C2DB=0.934  lit=0.90  rel=4%
+2026-08-16 11:54:11 | INFO    |   6/6 within 35% of literature. PBE masses are typically within 10-30% of experiment, so this is the expected band. If most are OFF, stop: the mass column is wrong and Step 5 will inherit it.
+2026-08-16 11:54:11 | INFO    | [step4] N=1,085 materials, 129 with a G0W0 anchor
+2026-08-16 11:54:11 | INFO    |   PBE  gap: median=1.348  range=[0.30,6.88]
+2026-08-16 11:54:11 | INFO    |   HSE  gap: median=2.261
+2026-08-16 11:54:11 | INFO    |   G0W0 gap: median=2.266
+2026-08-16 11:54:11 | INFO    | [step4] NUTS: 4 chains, 1000 warmup, 2000 samples, chain_method='vectorized', backend=gpu
+2026-08-16 11:56:46 | INFO    | [step4] sampling finished in 2.6 min
+2026-08-16 11:56:49 | INFO    | --- global parameter posteriors ---
+2026-08-16 11:56:49 | INFO    |                mean      sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd  ess_bulk  ess_tail   r_hat
+2026-08-16 11:56:49 | INFO    |   mu_pop     1.0228  0.0291  0.9608   1.0677     0.0081   0.0042   14.9640   30.2715  1.2071
+2026-08-16 11:56:49 | INFO    |   tau_pop    0.5974  0.0242  0.5657   0.6607     0.0074   0.0064   14.9489   15.0532  1.2010
+2026-08-16 11:56:49 | INFO    |   alpha_pbe -0.2652  0.0409 -0.3296  -0.1813     0.0114   0.0060   14.6766   22.3484  1.1883
+2026-08-16 11:56:49 | INFO    |   beta_pbe   0.6085  0.0092  0.5905   0.6242     0.0012   0.0005   62.2440   93.9369  1.0527
+2026-08-16 11:56:49 | INFO    |   alpha_hse  0.2272  0.0607  0.1290   0.3507     0.0182   0.0083   12.2064   21.6786  1.2360
+2026-08-16 11:56:49 | INFO    |   beta_hse   0.7434  0.0126  0.7187   0.7643     0.0026   0.0013   25.4867   30.9373  1.1028
+2026-08-16 11:56:49 | INFO    |   sigma_pbe  0.1109  0.0412  0.0428   0.1672     0.0153   0.0048    8.3861   35.5869  1.4202
+2026-08-16 11:56:49 | INFO    |   sigma_hse  0.2962  0.0234  0.2552   0.3334     0.0076   0.0008    9.6374   66.0646  1.3325
+2026-08-16 11:56:49 | INFO    |   sigma_gw   0.2742  0.0608  0.1632   0.3828     0.0204   0.0062    9.4577   23.7014  1.3484
+2026-08-16 11:57:42 | INFO    | --- convergence ---
+2026-08-16 11:57:42 | INFO    |   max r_hat   = 1.4202  (must be < 1.01)
+2026-08-16 11:57:42 | INFO    |   min ess_bulk= 8    (must be > 400)
+2026-08-16 11:57:43 | INFO    |   divergences = 529
+2026-08-16 11:57:43 | INFO    |   *** CONVERGENCE FAILED. Do not use these posteriors. Try target_accept_prob=0.95, max_tree_depth=12, or switch runtime (T4 float64 is slow; a CPU high-RAM runtime is often faster here).
+2026-08-16 11:57:43 | INFO    | --- physics sanity ---
+2026-08-16 11:57:43 | INFO    |   PBE: gap ~ -0.265 + 0.609 * E_true
+2026-08-16 11:57:43 | INFO    |   HSE: gap ~ +0.227 + 0.743 * E_true
+2026-08-16 11:57:43 | INFO    |   implied PBE underestimation at E_true=2 eV: 52%
+2026-08-16 11:57:43 | INFO    |   implied HSE underestimation at E_true=2 eV: 14%
+2026-08-16 11:57:43 | INFO    |   Literature expects PBE to underestimate by roughly 30-50% and HSE by much less. If PBE comes out as an OVERestimate, the data plumbing is wrong, not the physics.
+2026-08-16 11:57:43 | INFO    |   PPC obs_pbe: pearson r=1.0000  RMSE=0.000 eV
+2026-08-16 11:57:43 | INFO    |   PPC obs_hse: pearson r=1.0000  RMSE=0.000 eV
+2026-08-16 11:57:43 | INFO    | [step4] saved /content/drive/MyDrive/TJEECC/data/processed/gap_posterior.npy  shape=(1085, 1000)  dtype=float32
+2026-08-16 11:57:43 | INFO    | [step4] saved /content/drive/MyDrive/TJEECC/data/processed/gap_posterior_uids.csv  (row order matches the .npy)
+2026-08-16 11:57:43 | INFO    |   per-material relative posterior width: median=6.5%  p90=13.5%
+2026-08-16 11:57:43 | INFO    |   Materials WITHOUT a G0W0 anchor should show visibly wider posteriors. If they do not, the anchors are not informing the model and the identifiability assumption needs re-examining.
+2026-08-16 11:57:43 | INFO    |     with G0W0   (n=129): median width 6.7%
+2026-08-16 11:57:43 | INFO    |     without     (n=956): median width 6.5%
+2026-08-16 11:57:43 | INFO    | [step4] updated /content/drive/MyDrive/TJEECC/data/processed/uncertainty_scales.json
+2026-08-16 11:57:43 | INFO    | [step4] DONE
+
+2026-08-16 12:04:04 | INFO    | [step4b] N=1,085  anchors=129
+2026-08-16 12:04:04 | INFO    | --- why cell07 failed: PBE vs HSE collinearity ---
+2026-08-16 12:04:04 | INFO    |   pearson r(PBE, HSE)      = 0.9774
+2026-08-16 12:04:04 | INFO    |   HSE ~ +0.571 + 1.210*PBE   R^2 = 0.9552   residual sd = 0.331 eV
+2026-08-16 12:04:04 | INFO    |   R^2 near 1 means HSE carries almost no information independent of PBE. Treating them as two independent measurements of a latent gap is therefore unidentified, which is what produced the ridge, the 529 divergences and the near-identical anchored/unanchored posterior widths.
+2026-08-16 12:04:04 | INFO    | --- fitting calibration on the anchors ---
+2026-08-16 12:04:40 | INFO    |   sampled in 37 s
+2026-08-16 12:04:41 | INFO    |            mean      sd  hdi_3%  hdi_97%  mcse_mean  mcse_sd   ess_bulk   ess_tail   r_hat
+2026-08-16 12:04:41 | INFO    |   a      0.0720  0.0561 -0.0368   0.1752     0.0011   0.0007  2675.4425  3501.5391  1.0006
+2026-08-16 12:04:41 | INFO    |   b1     0.3126  0.1259  0.0953   0.5721     0.0027   0.0019  2235.7444  2790.2193  1.0020
+2026-08-16 12:04:41 | INFO    |   b2     1.0665  0.1041  0.8612   1.2549     0.0022   0.0016  2167.3415  2699.1563  1.0021
+2026-08-16 12:04:41 | INFO    |   sigma  0.2626  0.0167  0.2319   0.2938     0.0003   0.0002  3540.1130  3507.4450  1.0001
+2026-08-16 12:04:41 | INFO    | --- convergence ---
+2026-08-16 12:04:41 | INFO    |   max r_hat=1.0021 (<1.01)   min ess_bulk=2167 (>400)
+2026-08-16 12:04:41 | INFO    |   PASS
+2026-08-16 12:04:41 | INFO    |   E_gw ~ +0.072 + 0.313*PBE + 1.066*HSE   residual sigma = 0.263 eV
+2026-08-16 12:04:41 | INFO    |   For reference, Hegde et al. report ~0.21 eV cross-database gap disagreement in bulk databases.
+2026-08-16 12:04:41 | INFO    |   residual sd, HSE only : 0.266 eV
+2026-08-16 12:04:41 | INFO    |   residual sd, PBE + HSE: 0.261 eV
+2026-08-16 12:04:41 | INFO    | --- 10-fold CV coverage of the predictive intervals ---
+2026-08-16 12:08:54 | INFO    |   nominal   50%  empirical  51.2%  (OK)
+2026-08-16 12:08:54 | INFO    |   nominal   80%  empirical  85.3%  (OK)
+2026-08-16 12:08:54 | INFO    |   nominal   90%  empirical  90.7%  (OK)
+2026-08-16 12:08:54 | INFO    |   nominal   95%  empirical  93.8%  (OK)
+2026-08-16 12:08:54 | INFO    |   Intervals within ~8 points of nominal are usable. Systematic under-coverage means the propagated uncertainty is too narrow and every rank-stability result would be optimistic.
+2026-08-16 12:08:55 | INFO    | [step4b] saved /content/drive/MyDrive/TJEECC/data/processed/gap_posterior.npy shape=(1085, 1000)
+2026-08-16 12:08:55 | INFO    |   relative predictive width: median=9.3%  p90=18.6%
+2026-08-16 12:08:55 | INFO    |   absolute predictive sd   : median=0.267 eV
+2026-08-16 12:08:55 | INFO    |   This width is now dominated by the calibration residual sigma, which is the honest statement: given PBE and HSE, the true gap is uncertain to about that much, as measured on 129 G0W0 anchors.
+2026-08-16 12:08:55 | INFO    | --- physics sanity ---
+2026-08-16 12:08:55 | INFO    |   PBE=1.0 eV -> HSE~1.78 -> calibrated true gap 2.28 eV   (PBE underestimates by 56%)
+2026-08-16 12:08:55 | INFO    |   PBE=2.0 eV -> HSE~2.99 -> calibrated true gap 3.89 eV   (PBE underestimates by 49%)
+2026-08-16 12:08:55 | INFO    |   PBE=3.0 eV -> HSE~4.20 -> calibrated true gap 5.49 eV   (PBE underestimates by 45%)
+2026-08-16 12:08:55 | INFO    | [step4b] DONE
+
+2026-08-16 12:12:22 | INFO    | [cell9] N=1,085  anchors=129  non-anchors=956
+2026-08-16 12:12:22 | INFO    | --- distribution comparison: anchors vs non-anchors ---
+2026-08-16 12:12:22 | INFO    |   PBE gap      anchors: median=1.141 [0.59, 3.37]   others: median=1.410 [0.50, 3.84]
+2026-08-16 12:12:22 | INFO    |                KS=0.191  p=4.22e-04  DIFFERENT
+2026-08-16 12:12:22 | INFO    |   HSE gap      anchors: median=1.681 [1.09, 4.45]   others: median=2.342 [1.12, 5.15]
+2026-08-16 12:12:22 | INFO    |                KS=0.270  p=8.35e-08  DIFFERENT
+2026-08-16 12:12:22 | INFO    |   m_dos CBM    anchors: median=0.582 [0.19, 1.77]   others: median=0.767 [0.24, 2.45]
+2026-08-16 12:12:22 | INFO    |                KS=0.146  p=1.38e-02  compatible
+2026-08-16 12:12:22 | INFO    |   thickness    anchors: median=3.229 [2.44, 3.83]   others: median=4.438 [3.01, 7.96]
+2026-08-16 12:12:22 | INFO    |                KS=0.543  p=1.25e-31  DIFFERENT
+2026-08-16 12:12:22 | INFO    | --- extrapolation check in (PBE, HSE) space ---
+2026-08-16 12:12:22 | INFO    |   anchor cloud 95th-pct Mahalanobis distance = 3.10
+2026-08-16 12:12:22 | INFO    |   non-anchor materials beyond it             = 12.9%
+2026-08-16 12:12:22 | INFO    |   max non-anchor distance                    = 9.70
+2026-08-16 12:12:22 | INFO    |   anchor PBE range [0.30, 5.94]  HSE range [0.60, 7.44]
+2026-08-16 12:12:22 | INFO    |   materials inside the anchor box: 1,065 / 1,085 (98.2%)
+2026-08-16 12:12:22 | INFO    | --- predicted vs literature G0W0 (eV) ---
+2026-08-16 12:12:22 | INFO    |   mat        PBE    HSE  C2DB GW    pred    +/-  lit GW  pred-lit
+2026-08-16 12:12:22 | INFO    |   MoS2      1.58   2.09     2.53    2.80   0.26    2.70     +0.10
+2026-08-16 12:12:22 | INFO    |   WS2       1.53   2.05     2.53    2.75   0.27    2.85     -0.10
+2026-08-16 12:12:22 | INFO    |   WSe2      1.24   1.73     2.10    2.29   0.27    2.50     -0.21
+2026-08-16 12:12:22 | INFO    |   MoSe2     1.32   1.80     2.12    2.41   0.25    2.35     +0.06
+2026-08-16 12:12:22 | INFO    |   MoTe2     0.93   1.37     1.56    1.81   0.26    1.85     -0.04
+2026-08-16 12:12:22 | INFO    |   BN        4.67   5.68     7.12    7.58   0.28    6.80     +0.78
+2026-08-16 12:12:22 | INFO    |   P         0.90   1.51     2.03    1.95   0.28    2.10     -0.15
+2026-08-16 12:12:22 | INFO    |   mean signed error = +0.07 eV   mean |error| = 0.21 eV   (calibration residual sigma is 0.26 eV)
+2026-08-16 12:12:22 | INFO    |   No large systematic bias. The map is usable on the full set.
+2026-08-16 12:12:22 | INFO    | --- verdict ---
+2026-08-16 12:12:22 | INFO    |   The anchors are NOT a random sample of the working set. The 10-fold coverage result is valid for interpolation and must be described that way in the paper. State plainly that G0W0 availability in C2DB is not random and that predictions outside the anchor region carry unvalidated uncertainty.
+2026-08-16 12:12:22 | INFO    | [cell9] saved /content/drive/MyDrive/TJEECC/data/processed/step4_anchor_representativeness.csv
+2026-08-16 12:12:22 | INFO    | [cell9] DONE
+
+2026-08-16 12:28:33 | INFO    |   F_1/2 max relative error vs quadrature: 3.73e-03 (Bednarczyk's published accuracy is ~0.4%; tolerance 5e-3)
+2026-08-16 12:28:33 | INFO    | --- unit tests ---
+2026-08-16 12:28:33 | INFO    |   [PASS] (a) Natori prefactor -> W q n_s v_T   ratio=1.0001
+2026-08-16 12:28:33 | INFO    |   [PASS] (b) C_Q -> q^2 g_v m_d/(pi hbar^2)   ratio=1.0000
+2026-08-16 12:28:33 | INFO    |   [PASS] (c) SS >= 60 mV/dec at 300 K   kT/q*ln10=59.53 mV/dec
+2026-08-16 12:28:33 | INFO    |   [PASS] (d) I_n monotonic in V_G   
+2026-08-16 12:28:33 | INFO    |   [PASS] (d2) I saturates with V_DS   I(0.65)/I(0.30)=1.0002
+2026-08-16 12:28:33 | INFO    |   [PASS] (e) m1=m2 -> m_cond == m_dos   0.420000 vs 0.420000
+2026-08-16 12:28:33 | INFO    |   [PASS] (f) on/off increases with E_g (ambipolar)   Eg=0.6 -> 1.634e+00   Eg=2.0 -> 7.909e+03   x4840.1
+2026-08-16 12:28:33 | INFO    |   ALL PASS
+2026-08-16 12:28:33 | INFO    | [step5] Fermi-Dirac OK, unit tests OK
+2026-08-16 12:28:33 | INFO    | [step5] DONE
+
+2026-08-16 12:28:52 | INFO    | [cell11] device-ready 1,085 -> with full parameter set 754
+2026-08-16 12:28:52 | INFO    |   eps_ch: median=11.42 [3.92, 40.05]
+2026-08-16 12:28:52 | INFO    |   E_mean: median=2.77 eV [1.25, 7.59]
+2026-08-16 12:28:53 | INFO    | --- central figures of merit ---
+2026-08-16 12:28:53 | INFO    |   I_ON   median=1.861e+03 A/m  (1 A/m = 1 uA/um)
+2026-08-16 12:28:53 | INFO    |   on/off median=8.994e+03
+2026-08-16 12:28:53 | INFO    |   SS     median=70.5 mV/dec
+2026-08-16 12:28:53 | INFO    |   tau    median=0.241 ps
+2026-08-16 12:28:53 | INFO    | ======================================================================
+2026-08-16 12:28:53 | INFO    | CENSUS: which input moves which figure of merit, per material
+2026-08-16 12:29:22 | INFO    | --- median +/-1sigma spread in log10(FoM) from each input alone ---
+2026-08-16 12:29:22 | INFO    |   input                I_ON     on/off
+2026-08-16 12:29:22 | INFO    |   gap (measured)      0.000      0.461
+2026-08-16 12:29:22 | INFO    |   mass (ASSUMED)      0.094      0.186
+2026-08-16 12:29:22 | INFO    |   eps (measured)      0.000      0.000
+2026-08-16 12:29:22 | INFO    | --- I_ON: materials where the input swings the FoM by >2x ---
+2026-08-16 12:29:22 | INFO    |   gap-sensitive :   11 / 754 (1.5%)
+2026-08-16 12:29:22 | INFO    |   mass-sensitive:    0 / 754 (0.0%)
+2026-08-16 12:29:22 | INFO    | --- on_off: materials where the input swings the FoM by >2x ---
+2026-08-16 12:29:22 | INFO    |   gap-sensitive :  659 / 754 (87.4%)
+2026-08-16 12:29:22 | INFO    |   mass-sensitive:  106 / 754 (14.1%)
+2026-08-16 12:29:22 | INFO    | --- gap-sensitive subset (on/off) ---
+2026-08-16 12:29:22 | INFO    |   n=659  calibrated gap range [0.38, 12.91] eV (median 2.79)
+2026-08-16 12:29:22 | INFO    |   gap-insensitive median E = 2.66 eV
+2026-08-16 12:29:22 | INFO    |   INTERPRETATION. If the gap-sensitive fraction is small, the headline cannot be 'gap uncertainty reorders the shortlist'. It becomes: which figure of merit you rank by determines which uncertainty dominates, and for I_ON the dominant term is effective mass, whose sigma is ASSUMED. That makes the 0.10/0.20/0.40 sweep in Step 7 load-bearing, and it must be stated as the principal limitation.
+2026-08-16 12:29:23 | INFO    | ======================================================================
+2026-08-16 12:29:23 | INFO    | STEP 6 VALIDATION against published DFT-NEGF (PLACEHOLDER VALUES)
+2026-08-16 12:29:23 | INFO    |   mat      I_ON pub  I_ON model   ratio  SS model  citation
+2026-08-16 12:29:23 | INFO    |   MoS2         1250        2182    1.75      77.8  REPLACE_MoS2
+2026-08-16 12:29:23 | INFO    |   WS2          1600        2362    1.48      76.2  REPLACE_WS2
+2026-08-16 12:29:23 | INFO    |   WSe2         1100        2444    2.22      79.0  REPLACE_WSe2
+2026-08-16 12:29:23 | INFO    |   MoTe2        1400        2058    1.47      88.2  REPLACE_MoTe2
+2026-08-16 12:29:23 | INFO    |   P            2400        2879    1.20      75.3  REPLACE_phosphorene
+2026-08-16 12:29:23 | INFO    | --- validation gate ---
+2026-08-16 12:29:23 | INFO    |   geometric-mean ratio = 1.59   (gate: 0.5 to 2.0)
+2026-08-16 12:29:23 | INFO    |   within 2x: 4/5    within 3x: 5/5
+2026-08-16 12:29:23 | INFO    |   PASS
+2026-08-16 12:29:23 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table8_validation.csv
+2026-08-16 12:29:23 | INFO    |   REMINDER: replace the placeholder published values with cited numbers before this table becomes Table 8.
+2026-08-16 12:29:23 | INFO    | [cell11] DONE
+
+2026-08-16 12:34:18 | INFO    |   F_1/2 max relative error vs quadrature: 3.73e-03 (Bednarczyk's published accuracy is ~0.4%; tolerance 5e-3)
+2026-08-16 12:34:18 | INFO    | --- unit tests ---
+2026-08-16 12:34:18 | INFO    |   [PASS] (a) Natori prefactor -> W q n_s v_T   ratio=1.0001
+2026-08-16 12:34:18 | INFO    |   [PASS] (b) C_Q -> q^2 g_v m_d/(pi hbar^2)   ratio=1.0000
+2026-08-16 12:34:18 | INFO    |   [PASS] (c) SS >= 60 mV/dec at 300 K   kT/q*ln10=59.53 mV/dec
+2026-08-16 12:34:18 | INFO    |   [PASS] (d) I_n monotonic in V_G   
+2026-08-16 12:34:18 | INFO    |   [PASS] (d2) I saturates with V_DS   I(0.65)/I(0.30)=1.0002
+2026-08-16 12:34:18 | INFO    |   [PASS] (e) m1=m2 -> m_cond == m_dos   0.420000 vs 0.420000
+2026-08-16 12:34:18 | INFO    |   [PASS] (f) on/off increases with E_g (ambipolar)   Eg=0.6 -> 1.617e+00   Eg=2.0 -> 1.742e+04   x10770.4
+2026-08-16 12:34:18 | INFO    |   ALL PASS
+2026-08-16 12:34:18 | INFO    | [step5] Fermi-Dirac OK, unit tests OK
+2026-08-16 12:34:18 | INFO    | [step5] DONE
+
+2026-08-16 12:35:48 | INFO    |   F_1/2 max relative error vs quadrature: 3.73e-03 (Bednarczyk's published accuracy is ~0.4%; tolerance 5e-3)
+2026-08-16 12:35:48 | INFO    | --- unit tests ---
+2026-08-16 12:35:48 | INFO    |   [PASS] (a) Natori prefactor -> W q n_s v_T   ratio=1.0001
+2026-08-16 12:35:48 | INFO    |   [PASS] (b) C_Q -> q^2 g_v m_d/(pi hbar^2)   ratio=1.0000
+2026-08-16 12:35:48 | INFO    |   [PASS] (c) SS >= 60 mV/dec at 300 K   kT/q*ln10=59.53 mV/dec
+2026-08-16 12:35:48 | INFO    |   [PASS] (d) I_n monotonic in V_G   
+2026-08-16 12:35:48 | INFO    |   [PASS] (d2) I saturates with V_DS   I(0.65)/I(0.30)=1.0002
+2026-08-16 12:35:48 | INFO    |   [PASS] (e) m1=m2 -> m_cond == m_dos   0.420000 vs 0.420000
+2026-08-16 12:35:48 | INFO    |   [PASS] (f) on/off increases with E_g (ambipolar)   Eg=0.6 -> 1.617e+00   Eg=2.0 -> 1.742e+04   x10770.4
+2026-08-16 12:35:48 | INFO    |   ALL PASS
+2026-08-16 12:35:48 | INFO    | [step5] Fermi-Dirac OK, unit tests OK
+2026-08-16 12:35:48 | INFO    | [step5] DONE
+
+2026-08-16 12:35:51 | INFO    | [cell11] device-ready 1,085 -> with full parameter set 754
+2026-08-16 12:35:51 | INFO    |   eps_ch: median=11.42 [3.92, 40.05]
+2026-08-16 12:35:51 | INFO    |   E_mean: median=2.77 eV [1.25, 7.59]
+2026-08-16 12:35:51 | INFO    | --- central figures of merit ---
+2026-08-16 12:35:51 | INFO    |   I_ON   median=1.595e+03 A/m  (1 A/m = 1 uA/um)
+2026-08-16 12:35:51 | INFO    |   on/off median=1.547e+04
+2026-08-16 12:35:51 | INFO    |   SS     median=70.4 mV/dec
+2026-08-16 12:35:51 | INFO    |   tau    median=0.281 ps
+2026-08-16 12:35:51 | INFO    | ======================================================================
+2026-08-16 12:35:51 | INFO    | CENSUS: which input moves which figure of merit, per material
+2026-08-16 12:36:22 | INFO    | --- median +/-1sigma spread in log10(FoM) from each input alone ---
+2026-08-16 12:36:22 | INFO    |   input                I_ON     on/off
+2026-08-16 12:36:22 | INFO    |   gap (measured)      0.000      0.000
+2026-08-16 12:36:22 | INFO    |   mass (ASSUMED)      0.089      0.090
+2026-08-16 12:36:22 | INFO    |   eps (measured)      0.004      0.004
+2026-08-16 12:36:22 | INFO    | --- I_ON: materials where the input swings the FoM by >2x ---
+2026-08-16 12:36:22 | INFO    |   gap-sensitive :   12 / 754 (1.6%)
+2026-08-16 12:36:22 | INFO    |   mass-sensitive:    0 / 754 (0.0%)
+2026-08-16 12:36:22 | INFO    | --- on_off: materials where the input swings the FoM by >2x ---
+2026-08-16 12:36:22 | INFO    |   gap-sensitive :   54 / 754 (7.2%)
+2026-08-16 12:36:22 | INFO    |   mass-sensitive:    0 / 754 (0.0%)
+2026-08-16 12:36:22 | INFO    | --- gap-sensitive subset (on/off) ---
+2026-08-16 12:36:22 | INFO    |   n=54  calibrated gap range [0.80, 7.50] eV (median 2.48)
+2026-08-16 12:36:22 | INFO    |   gap-insensitive median E = 2.79 eV
+2026-08-16 12:36:22 | INFO    |   INTERPRETATION. If the gap-sensitive fraction is small, the headline cannot be 'gap uncertainty reorders the shortlist'. It becomes: which figure of merit you rank by determines which uncertainty dominates, and for I_ON the dominant term is effective mass, whose sigma is ASSUMED. That makes the 0.10/0.20/0.40 sweep in Step 7 load-bearing, and it must be stated as the principal limitation.
+2026-08-16 12:36:22 | INFO    | ======================================================================
+2026-08-16 12:36:22 | INFO    | STEP 6 VALIDATION against published DFT-NEGF (PLACEHOLDER VALUES)
+2026-08-16 12:36:22 | INFO    |   mat      I_ON pub  I_ON model   ratio  SS model  citation
+2026-08-16 12:36:22 | INFO    |   MoS2         1250        1733    1.39      76.6  REPLACE_MoS2
+2026-08-16 12:36:22 | INFO    |   WS2          1600        1899    1.19      75.2  REPLACE_WS2
+2026-08-16 12:36:22 | INFO    |   WSe2         1100        1891    1.72      77.6  REPLACE_WSe2
+2026-08-16 12:36:22 | INFO    |   MoTe2        1400        1449    1.04      85.5  REPLACE_MoTe2
+2026-08-16 12:36:22 | INFO    |   P            2400        2333    0.97      74.5  REPLACE_phosphorene
+2026-08-16 12:36:22 | INFO    | --- validation gate ---
+2026-08-16 12:36:22 | INFO    |   geometric-mean ratio = 1.23   (gate: 0.5 to 2.0)
+2026-08-16 12:36:22 | INFO    |   within 2x: 5/5    within 3x: 5/5
+2026-08-16 12:36:22 | INFO    |   PASS
+2026-08-16 12:36:22 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table8_validation.csv
+2026-08-16 12:36:22 | INFO    |   REMINDER: replace the placeholder published values with cited numbers before this table becomes Table 8.
+2026-08-16 12:36:22 | INFO    | [cell11] DONE
+
+2026-08-16 12:45:09 | INFO    |   F_1/2 max relative error vs quadrature: 3.73e-03 (Bednarczyk's published accuracy is ~0.4%; tolerance 5e-3)
+2026-08-16 12:45:09 | INFO    | --- unit tests ---
+2026-08-16 12:45:09 | INFO    |   [PASS] (a) Natori prefactor -> W q n_s v_T   ratio=1.0001
+2026-08-16 12:45:09 | INFO    |   [PASS] (b) C_Q -> q^2 g_v m_d/(pi hbar^2)   ratio=1.0000
+2026-08-16 12:45:09 | INFO    |   [PASS] (c) SS >= 60 mV/dec at 300 K   kT/q*ln10=59.53 mV/dec
+2026-08-16 12:45:09 | INFO    |   [PASS] (d) I_n monotonic in V_G   
+2026-08-16 12:45:09 | INFO    |   [PASS] (d2) I saturates with V_DS   I(0.65)/I(0.30)=1.0002
+2026-08-16 12:45:09 | INFO    |   [PASS] (e) m1=m2 -> m_cond == m_dos   0.420000 vs 0.420000
+2026-08-16 12:45:09 | INFO    |   [PASS] (f) on/off increases with E_g (ambipolar)   Eg=0.6 -> 1.617e+00   Eg=2.0 -> 1.742e+04   x10770.4
+2026-08-16 12:45:09 | INFO    |   ALL PASS
+2026-08-16 12:45:09 | INFO    | [step5] Fermi-Dirac OK, unit tests OK
+2026-08-16 12:45:09 | INFO    | [step5] DONE
+
+2026-08-16 12:45:34 | INFO    | [cell12] 754 materials, 256 draws, 10 regimes x 3 mass sigmas
+2026-08-16 12:55:28 | INFO    | ==============================================================================
+2026-08-16 12:55:28 | INFO    | RANK STABILITY vs TRANSPORT REGIME   (sigma_ln mass = 0.20, the base case)
+2026-08-16 12:55:28 | INFO    |       regime      B   spread     >2x     tau   top10   top20
+2026-08-16 12:55:28 | INFO    |          0.1  0.032    0.337   90.8%   0.849   71.9%   76.2%
+2026-08-16 12:55:28 | INFO    |         0.25  0.077    0.325   78.2%   0.848   70.6%   75.5%
+2026-08-16 12:55:28 | INFO    |          0.5  0.143    0.307   57.4%   0.847   65.3%   75.2%
+2026-08-16 12:55:28 | INFO    |            1  0.250    0.284   36.7%   0.845   65.0%   72.2%
+2026-08-16 12:55:28 | INFO    |            2  0.400    0.248   22.1%   0.840   60.9%   71.7%
+2026-08-16 12:55:28 | INFO    |            4  0.572    0.208   11.0%   0.838   63.4%   69.2%
+2026-08-16 12:55:28 | INFO    |            8  0.728    0.171    6.0%   0.835   65.0%   68.6%
+2026-08-16 12:55:28 | INFO    |           20  0.870    0.131    3.3%   0.830   65.0%   67.3%
+2026-08-16 12:55:28 | INFO    |          100  0.971    0.103    2.8%   0.823   64.7%   65.3%
+2026-08-16 12:55:28 | INFO    |    ballistic  1.000    0.092    2.5%   0.823   65.6%   68.0%
+2026-08-16 12:55:28 | INFO    | --- mass-sigma sensitivity (the ASSUMED input) ---
+2026-08-16 12:55:28 | INFO    |   sigma_ln=0.10:  ballistic tau=0.887 top10=65%   |   diffusive tau=0.918 top10=74%
+2026-08-16 12:55:28 | INFO    |   sigma_ln=0.20:  ballistic tau=0.823 top10=66%   |   diffusive tau=0.849 top10=72%
+2026-08-16 12:55:28 | INFO    |   sigma_ln=0.40:  ballistic tau=0.698 top10=60%   |   diffusive tau=0.720 top10=62%
+2026-08-16 12:55:28 | INFO    | --- headline numbers ---
+2026-08-16 12:55:28 | INFO    |   I_ON spread   ballistic 0.092 dec -> diffusive 0.337 dec   (amplification x3.7, analytic 4.0)
+2026-08-16 12:55:28 | INFO    |   Kendall tau   0.823 -> 0.849
+2026-08-16 12:55:28 | INFO    |   top-10 keep   66% -> 72%
+2026-08-16 12:55:28 | INFO    |   The claim to make: screening rankings are robust at the ballistic limit and degrade predictably as the channel becomes diffusive, with a mass sensitivity exponent moving from -0.5 to -2.0. Report the ballisticity at which top-10 retention drops below 80% as the practical design rule.
+2026-08-16 12:55:28 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/transport_regime_rank_stability.csv
+2026-08-16 12:55:28 | INFO    | [cell12] DONE
+
+2026-08-16 13:03:10 | INFO    | ==============================================================================
+2026-08-16 13:03:10 | INFO    | A. NEAR-TIE TEST  (can invalidate the whole rank-instability finding)
+2026-08-16 13:03:10 | INFO    |   rank uid                      I_ON  gap to next
+2026-08-16 13:03:10 | INFO    |      1 2AsIrTe3-1            14619.3       37.00%
+2026-08-16 13:03:10 | INFO    |      2 2BrTl-1                9210.8       12.82%
+2026-08-16 13:03:10 | INFO    |      3 1STa2Te2-1             8029.7       24.86%
+2026-08-16 13:03:10 | INFO    |      4 2TeTl-2                6033.3        2.70%
+2026-08-16 13:03:10 | INFO    |      5 2IPt-1                 5870.5        0.46%
+2026-08-16 13:03:10 | INFO    |      6 2BiPO4-1               5843.7        2.45%
+2026-08-16 13:03:10 | INFO    |      7 2GaTe-1                5700.7        5.13%
+2026-08-16 13:03:10 | INFO    |      8 2ISb-1                 5408.4       12.02%
+2026-08-16 13:03:10 | INFO    |      9 1PtTe2-1               4758.3        0.18%
+2026-08-16 13:03:10 | INFO    |     10 2GeH-1                 4749.5        9.32%
+2026-08-16 13:03:10 | INFO    |     11 1BiFS2O6-1             4306.7        3.29%
+2026-08-16 13:03:10 | INFO    |     12 1BiHS2O6-1             4165.2        0.22%
+2026-08-16 13:03:10 | INFO    |     13 2Sb-1                  4156.1        5.11%
+2026-08-16 13:03:10 | INFO    |     14 2TeZn-1                3943.6        0.13%
+2026-08-16 13:03:10 | INFO    |     15 2GaGeTe-1              3938.4        0.29%
+2026-08-16 13:03:15 | INFO    |   rank-10 to rank-11 separation : 9.32%
+2026-08-16 13:03:15 | INFO    |   rank-1 to rank-10 spread      : 67.51%
+2026-08-16 13:03:15 | INFO    |   median per-material 1-sigma   : 10.63%
+2026-08-16 13:03:15 | INFO    |   VERDICT: REAL
+2026-08-16 13:03:15 | INFO    |   If the rank-10/11 separation is far below the per-material sigma, the shortlist boundary is a coin flip and 'one third of the top 10 changes' is a statement about ties, not about screening reliability. In that case report dominance probabilities and DROP the top-k retention headline.
+2026-08-16 13:03:15 | INFO    | ==============================================================================
+2026-08-16 13:03:15 | INFO    | B. DOMINANCE AND RANK ENTROPY
+2026-08-16 13:05:54 | INFO    |   dominance matrix for the top 30 -> fig4_dominance_matrix.csv (Figure 4a)
+2026-08-16 13:05:54 | INFO    |   pairs with P(A>B) between 0.4 and 0.6 (statistically tied): 21.4%
+2026-08-16 13:05:54 | INFO    |   pairs with P(A>B) > 0.95 (clearly ordered): 7.7%
+2026-08-16 13:05:54 | INFO    |   rank entropy: median=0.8115  top-30 median=0.5608  (0 = perfectly determined)
+2026-08-16 13:05:54 | INFO    | ==============================================================================
+2026-08-16 13:05:54 | INFO    | C. SOBOL SENSITIVITY
+2026-08-16 13:06:11 | INFO    |   20 representative materials x 1024 Saltelli base samples
+2026-08-16 13:06:11 | INFO    |   --- I_ON: median total-order index ---
+2026-08-16 13:06:11 | INFO    |     Eg         ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |     m_dos_e    ST= 0.017 +/- 0.002   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |     m_cond_e   ST= 0.954 +/- 0.059   influential
+2026-08-16 13:06:11 | INFO    |     m_dos_h    ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |     m_cond_h   ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |     eps        ST= 0.004 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |   --- on_off: median total-order index ---
+2026-08-16 13:06:11 | INFO    |     Eg         ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |     m_dos_e    ST= 0.017 +/- 0.002   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |     m_cond_e   ST= 0.954 +/- 0.060   influential
+2026-08-16 13:06:11 | INFO    |     m_dos_h    ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |     m_cond_h   ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |     eps        ST= 0.004 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 13:06:11 | INFO    |   Report indices whose confidence interval covers zero as NOT influential, rather than ranking noise.
+2026-08-16 13:06:11 | INFO    | ==============================================================================
+2026-08-16 13:06:11 | INFO    | D. ROBUST SELECTION RULE (Table 10)
+2026-08-16 13:06:11 | INFO    |    rk by posterior MEAN          by 10th-pct LCB                 H
+2026-08-16 13:06:11 | INFO    |     1 As1-Ir1-Te3                Br1-Tl1                     0.304
+2026-08-16 13:06:11 | INFO    |     2 I1-Pt1                     Bi1-O4-P1                   0.356
+2026-08-16 13:06:11 | INFO    |     3 Hf3-N2-O2                  Ga1-Te1                     0.361
+2026-08-16 13:06:11 | INFO    |     4 S1-Ta2-Te2                 As1-Ir1-Te3                 0.395
+2026-08-16 13:06:11 | INFO    |     5 Br1-Tl1                    Ge1-H1                      0.407
+2026-08-16 13:06:11 | INFO    |     6 Co1-S2                     Bi1-F1-O6-S2                0.466
+2026-08-16 13:06:12 | INFO    |     7 Pt1-Te2                    Bi1-H1-O6-S2                0.488
+2026-08-16 13:06:12 | INFO    |     8 Te1-Tl1                    Sb1                         0.495
+2026-08-16 13:06:12 | INFO    |     9 I1-Sb1                     Te1-Tl1                     0.536
+2026-08-16 13:06:12 | INFO    |    10 Bi1-O4-P1                  Te1-Zn1                     0.520
+2026-08-16 13:06:12 | INFO    |   overlap between the two shortlists: 4/10
+2026-08-16 13:06:12 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table10_robust_shortlist.csv
+2026-08-16 13:06:12 | INFO    |   If the overlap is high, the robust rule changes little and should be reported as a null result rather than sold as a contribution.
+2026-08-16 13:06:12 | INFO    | [cell13] DONE
+
+2026-08-16 13:32:17 | INFO    |   NOTE: Times New Roman unavailable; using 'Liberation Serif'. Install with: apt-get install -qq fonts-liberation  (Liberation Serif is metrically identical to Times New Roman). Declare the substitution in your submission letter.
+2026-08-16 13:32:19 | INFO    |   fig2_gap_dispersion          16.00 x  6.20 cm  236 px/cm  OK
+2026-08-16 13:39:12 | INFO    | [cell16] reference table -> /content/drive/MyDrive/TJEECC/data/processed/table8_references_FILLED.csv
+2026-08-16 13:39:12 | INFO    | --- excluded from the ballistic gate ---
+2026-08-16 13:39:12 | INFO    |   Afzalian, npj 2D Mater. Appl. 5, 5 (2021): DISSIPATIVE DFT-NEGF with electron-phonon scattering, I_OFF = 10 nA/um, V_DD = 0.6 V, L = 5 nm. Not a ballistic reference. Use it for the diffusive-limit comparison in the transport-regime analysis instead, where it is the right benchmark.
+2026-08-16 13:39:12 | INFO    | ==============================================================================
+2026-08-16 13:39:12 | INFO    |   mat    class        Lg   Vdd     pub   model  ratio     SS  p?
+2026-08-16 13:39:12 | INFO    |   MoS2   EMA-NEGF      6  0.57    2133    1228   0.58   94.0  n
+2026-08-16 13:39:12 | INFO    |   MoS2   EMA-NEGF      8  0.60    2100    1651   0.79   79.9  n
+2026-08-16 13:39:12 | INFO    |   MoS2   DFT-NEGF     10  0.50     348    1239   3.56   72.5  n
+2026-08-16 13:39:12 | INFO    |   MoS2   DFT-NEGF      8  0.50     273    1066   3.91   79.9  n
+2026-08-16 13:39:12 | INFO    |   MoS2   DFT-NEGF      6  0.50     221     677   3.07   99.5  n
+2026-08-16 13:39:12 | INFO    |   WSe2   DFT-NEGF      5  0.64    1464    1028   0.70  120.3  p
+2026-08-16 13:39:12 | INFO    |   WSe2   DFT-NEGF      7  0.69    1302    2295   1.76   87.7  p
+2026-08-16 13:39:12 | INFO    |   WSe2   DFT-NEGF      9  0.72    1292    3029   2.34   75.3  p
+2026-08-16 13:39:12 | INFO    | --- validation gate ---
+2026-08-16 13:39:12 | INFO    |   EMA-NEGF   (PRIMARY GATE): geometric-mean ratio = 0.67, within 2x: 2/2
+2026-08-16 13:39:12 | INFO    |     PASS  (gate: 0.5 to 2.0)
+2026-08-16 13:39:12 | INFO    |   DFT-NEGF   (systematic offset): geometric-mean ratio = 2.23, within 2x: 2/6
+2026-08-16 13:39:12 | INFO    |   model/full-band offset relative to model/EMA: x3.3
+2026-08-16 13:39:12 | INFO    |   Interpretation for the Limitations section: an effective-mass, ideal-contact ballistic model overestimates full-band DFT-NEGF with metal contacts by roughly this factor. Ni et al. document the same gap between EMA and full-band NEGF within a single table (2133 vs 221 uA/um at L = 6 nm). This is a known, systematic property of the model class, not a defect of the implementation, and it does not affect RELATIVE rankings, which is what this paper reports.
+2026-08-16 13:39:12 | INFO    | --- caveats to carry into the manuscript ---
+2026-08-16 13:39:12 | INFO    |   1. The WSe2 rows are p-type; our model reports the n-branch. Either compare the hole branch explicitly or drop these rows and say why.
+2026-08-16 13:39:12 | INFO    |   2. Sun et al. quote EOT as a range (0.41-0.54 nm); the midpoint is used here. State that.
+2026-08-16 13:39:12 | INFO    |   3. Ni et al. include Ti electrodes with a Schottky barrier; our contacts are ideal. This is part of the offset above.
+2026-08-16 13:39:12 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table8_validation_real.csv
+2026-08-16 13:39:12 | INFO    | [cell16] DONE
+
+2026-08-16 13:44:24 | INFO    | [cell11] device-ready 1,085 -> with full parameter set 754
+2026-08-16 13:44:24 | INFO    |   eps_ch: median=11.42 [3.92, 40.05]
+2026-08-16 13:44:24 | INFO    |   E_mean: median=2.77 eV [1.25, 7.59]
+2026-08-16 13:44:24 | INFO    | --- central figures of merit ---
+2026-08-16 13:44:24 | INFO    |   I_ON   median=1.595e+03 A/m  (1 A/m = 1 uA/um)
+2026-08-16 13:44:24 | INFO    |   on/off median=1.547e+04
+2026-08-16 13:44:24 | INFO    |   SS     median=70.4 mV/dec
+2026-08-16 13:44:24 | INFO    |   tau    median=0.281 ps
+2026-08-16 13:44:24 | INFO    |   parameter table (with FoMs) -> device_parameters.parquet
+2026-08-16 13:44:24 | INFO    | ======================================================================
+2026-08-16 13:44:24 | INFO    | CENSUS: which input moves which figure of merit, per material
+2026-08-16 13:44:54 | INFO    | --- median +/-1sigma spread in log10(FoM) from each input alone ---
+2026-08-16 13:44:54 | INFO    |   input                I_ON     on/off
+2026-08-16 13:44:54 | INFO    |   gap (measured)      0.000      0.000
+2026-08-16 13:44:54 | INFO    |   mass (ASSUMED)      0.089      0.090
+2026-08-16 13:44:54 | INFO    |   eps (measured)      0.004      0.004
+2026-08-16 13:44:54 | INFO    | --- I_ON: materials where the input swings the FoM by >2x ---
+2026-08-16 13:44:54 | INFO    |   gap-sensitive :   12 / 754 (1.6%)
+2026-08-16 13:44:54 | INFO    |   mass-sensitive:    0 / 754 (0.0%)
+2026-08-16 13:44:54 | INFO    | --- on_off: materials where the input swings the FoM by >2x ---
+2026-08-16 13:44:54 | INFO    |   gap-sensitive :   54 / 754 (7.2%)
+2026-08-16 13:44:54 | INFO    |   mass-sensitive:    0 / 754 (0.0%)
+2026-08-16 13:44:54 | INFO    | --- gap-sensitive subset (on/off) ---
+2026-08-16 13:44:54 | INFO    |   n=54  calibrated gap range [0.80, 7.50] eV (median 2.48)
+2026-08-16 13:44:54 | INFO    |   gap-insensitive median E = 2.79 eV
+2026-08-16 13:44:54 | INFO    |   INTERPRETATION. If the gap-sensitive fraction is small, the headline cannot be 'gap uncertainty reorders the shortlist'. It becomes: which figure of merit you rank by determines which uncertainty dominates, and for I_ON the dominant term is effective mass, whose sigma is ASSUMED. That makes the 0.10/0.20/0.40 sweep in Step 7 load-bearing, and it must be stated as the principal limitation.
+2026-08-16 13:44:55 | INFO    | ======================================================================
+2026-08-16 13:44:55 | INFO    | STEP 6 VALIDATION against published DFT-NEGF (PLACEHOLDER VALUES)
+2026-08-16 13:44:55 | INFO    |   mat      I_ON pub  I_ON model   ratio  SS model  citation
+2026-08-16 13:44:55 | INFO    |   MoS2         1250        1733    1.39      76.6  REPLACE_MoS2
+2026-08-16 13:44:55 | INFO    |   WS2          1600        1899    1.19      75.2  REPLACE_WS2
+2026-08-16 13:44:55 | INFO    |   WSe2         1100        1891    1.72      77.6  REPLACE_WSe2
+2026-08-16 13:44:55 | INFO    |   MoTe2        1400        1449    1.04      85.5  REPLACE_MoTe2
+2026-08-16 13:44:55 | INFO    |   P            2400        2333    0.97      74.5  REPLACE_phosphorene
+2026-08-16 13:44:55 | INFO    | --- validation gate ---
+2026-08-16 13:44:55 | INFO    |   geometric-mean ratio = 1.23   (gate: 0.5 to 2.0)
+2026-08-16 13:44:55 | INFO    |   within 2x: 5/5    within 3x: 5/5
+2026-08-16 13:44:55 | INFO    |   PASS
+2026-08-16 13:44:55 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table8_validation.csv
+2026-08-16 13:44:55 | INFO    |   REMINDER: replace the placeholder published values with cited numbers before this table becomes Table 8.
+2026-08-16 13:44:55 | INFO    | [cell11] DONE
+
+2026-08-16 13:45:18 | INFO    |   NOTE: Times New Roman unavailable; using 'Liberation Serif'. Install with: apt-get install -qq fonts-liberation  (Liberation Serif is metrically identical to Times New Roman). Declare the substitution in your submission letter.
+2026-08-16 13:45:19 | INFO    |   fig2_gap_dispersion          16.00 x  6.20 cm  236 px/cm  OK
+2026-08-16 13:45:20 | INFO    |   fig3_ion_ioff                 8.90 x  7.00 cm  236 px/cm  OK
+2026-08-16 13:45:21 | INFO    |   fig4_dominance_entropy       16.00 x  7.00 cm  236 px/cm  OK
+2026-08-16 13:45:22 | INFO    |   fig5_sobol                    8.90 x  6.00 cm  236 px/cm  OK
+2026-08-16 13:45:22 | INFO    |   fig6_transport_regime         9.92 x  6.40 cm  236 px/cm  OK
+2026-08-16 13:45:22 | INFO    | --- figure export complete ---
+2026-08-16 13:45:22 | INFO    |   TIFF (submission) and PNG (drafting) in /content/drive/MyDrive/TJEECC/figures
+2026-08-16 13:45:22 | INFO    |   Every panel is <= 16 cm wide and 600 dpi = 236 px/cm, twice the journal minimum of 118 px/cm.
+2026-08-16 13:45:22 | INFO    |   Remaining: Figure 1, the pipeline schematic, drawn by hand.
+2026-08-16 13:45:22 | INFO    | [cell14] DONE
+
+2026-08-16 13:45:30 | INFO    | [cell15] gap-sensitive 54 / 754
+2026-08-16 13:45:30 | INFO    |   Sobol on 20 saturated materials...
+2026-08-16 13:45:47 | INFO    |   Sobol on 20 gap-sensitive materials...
+2026-08-16 13:46:04 | INFO    | --- median total-order indices ---
+2026-08-16 13:46:04 | INFO    |   I_ON    saturated      dominant=m_cond_e   ST=0.951   E_g ST=0.000
+2026-08-16 13:46:04 | INFO    |   I_ON    gap-sensitive  dominant=m_cond_e   ST=0.953   E_g ST=0.000
+2026-08-16 13:46:04 | INFO    |   on_off  saturated      dominant=m_cond_e   ST=0.951   E_g ST=0.000
+2026-08-16 13:46:04 | INFO    |   on_off  gap-sensitive  dominant=m_cond_e   ST=0.953   E_g ST=0.000
+2026-08-16 13:46:05 | INFO    |   Figure 5 (revised) -> /content/drive/MyDrive/TJEECC/figures/fig5_sobol_by_regime.tiff
+2026-08-16 13:46:05 | INFO    |   Caption to write: 'The band gap has no influence once E_g exceeds the ambipolar limit (a), and becomes the dominant term below it (b). Effective mass governs I_ON in both regimes.'
+2026-08-16 13:46:05 | INFO    | [cell15] reference template -> /content/drive/MyDrive/TJEECC/data/processed/table8_references_TEMPLATE.csv
+2026-08-16 13:46:05 | INFO    |   Fill EVERY column from the paper itself. A row missing L_g, V_DD or I_OFF cannot be used: without the off-current specification you are comparing at different threshold voltages, which is the error that produces order-of-magnitude discrepancies.
+2026-08-16 13:46:05 | INFO    | [cell15] DONE
+
+2026-08-16 13:46:27 | INFO    | [cell16] reference table -> /content/drive/MyDrive/TJEECC/data/processed/table8_references_FILLED.csv
+2026-08-16 13:46:27 | INFO    | --- excluded from the ballistic gate ---
+2026-08-16 13:46:27 | INFO    |   Afzalian, npj 2D Mater. Appl. 5, 5 (2021): DISSIPATIVE DFT-NEGF with electron-phonon scattering, I_OFF = 10 nA/um, V_DD = 0.6 V, L = 5 nm. Not a ballistic reference. Use it for the diffusive-limit comparison in the transport-regime analysis instead, where it is the right benchmark.
+2026-08-16 13:46:28 | INFO    | ==============================================================================
+2026-08-16 13:46:28 | INFO    |   mat    class        Lg   Vdd     pub   model  ratio     SS  p?
+2026-08-16 13:46:28 | INFO    |   MoS2   EMA-NEGF      6  0.57    2133    1228   0.58   94.0  n
+2026-08-16 13:46:28 | INFO    |   MoS2   EMA-NEGF      8  0.60    2100    1651   0.79   79.9  n
+2026-08-16 13:46:28 | INFO    |   MoS2   DFT-NEGF     10  0.50     348    1239   3.56   72.5  n
+2026-08-16 13:46:28 | INFO    |   MoS2   DFT-NEGF      8  0.50     273    1066   3.91   79.9  n
+2026-08-16 13:46:28 | INFO    |   MoS2   DFT-NEGF      6  0.50     221     677   3.07   99.5  n
+2026-08-16 13:46:28 | INFO    |   WSe2   DFT-NEGF      5  0.64    1464    1028   0.70  120.3  p
+2026-08-16 13:46:28 | INFO    |   WSe2   DFT-NEGF      7  0.69    1302    2295   1.76   87.7  p
+2026-08-16 13:46:28 | INFO    |   WSe2   DFT-NEGF      9  0.72    1292    3029   2.34   75.3  p
+2026-08-16 13:46:28 | INFO    | --- validation gate ---
+2026-08-16 13:46:28 | INFO    |   EMA-NEGF   (PRIMARY GATE): geometric-mean ratio = 0.67, within 2x: 2/2
+2026-08-16 13:46:28 | INFO    |     PASS  (gate: 0.5 to 2.0)
+2026-08-16 13:46:28 | INFO    |   DFT-NEGF   (systematic offset): geometric-mean ratio = 2.23, within 2x: 2/6
+2026-08-16 13:46:28 | INFO    |   model/full-band offset relative to model/EMA: x3.3
+2026-08-16 13:46:28 | INFO    |   Interpretation for the Limitations section: an effective-mass, ideal-contact ballistic model overestimates full-band DFT-NEGF with metal contacts by roughly this factor. Ni et al. document the same gap between EMA and full-band NEGF within a single table (2133 vs 221 uA/um at L = 6 nm). This is a known, systematic property of the model class, not a defect of the implementation, and it does not affect RELATIVE rankings, which is what this paper reports.
+2026-08-16 13:46:28 | INFO    | --- caveats to carry into the manuscript ---
+2026-08-16 13:46:28 | INFO    |   1. The WSe2 rows are p-type; our model reports the n-branch. Either compare the hole branch explicitly or drop these rows and say why.
+2026-08-16 13:46:28 | INFO    |   2. Sun et al. quote EOT as a range (0.41-0.54 nm); the midpoint is used here. State that.
+2026-08-16 13:46:28 | INFO    |   3. Ni et al. include Ti electrodes with a Schottky barrier; our contacts are ideal. This is part of the offset above.
+2026-08-16 13:46:28 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table8_validation_real.csv
+2026-08-16 13:46:28 | INFO    | [cell16] DONE
+
+2026-08-16 13:52:26 | INFO    |   F_1/2 max relative error vs quadrature: 3.73e-03 (Bednarczyk's published accuracy is ~0.4%; tolerance 5e-3)
+2026-08-16 13:52:26 | INFO    | --- unit tests ---
+2026-08-16 13:52:26 | INFO    |   [PASS] (a) Natori prefactor -> W q n_s v_T   ratio=1.0001
+2026-08-16 13:52:26 | INFO    |   [PASS] (b) C_Q -> q^2 g_v m_d/(pi hbar^2)   ratio=1.0000
+2026-08-16 13:52:26 | INFO    |   [PASS] (c) SS >= 60 mV/dec at 300 K   kT/q*ln10=59.53 mV/dec
+2026-08-16 13:52:26 | INFO    |   [PASS] (d) I_n monotonic in V_G   
+2026-08-16 13:52:26 | INFO    |   [PASS] (d2) I saturates with V_DS   I(0.65)/I(0.30)=1.0002
+2026-08-16 13:52:26 | INFO    |   [PASS] (e) m1=m2 -> m_cond == m_dos   0.420000 vs 0.420000
+2026-08-16 13:52:26 | INFO    |   [PASS] (f) on/off increases with E_g (ambipolar)   Eg=0.6 -> 1.617e+00   Eg=2.0 -> 1.742e+04   x10770.4
+2026-08-16 13:52:26 | INFO    |   ALL PASS
+2026-08-16 13:52:26 | INFO    | [step5] Fermi-Dirac OK, unit tests OK
+2026-08-16 13:52:26 | INFO    | [step5] DONE
+
+2026-08-16 13:53:52 | INFO    | [cell11] device-ready 1,085 -> with full parameter set 754
+2026-08-16 13:53:52 | INFO    |   eps_ch: median=11.42 [3.92, 40.05]
+2026-08-16 13:53:52 | INFO    |   E_mean: median=2.77 eV [1.25, 7.59]
+2026-08-16 13:53:52 | INFO    | --- central figures of merit ---
+2026-08-16 13:53:52 | INFO    |   I_ON   median=1.595e+03 A/m  (1 A/m = 1 uA/um)
+2026-08-16 13:53:52 | INFO    |   on/off median=1.547e+04
+2026-08-16 13:53:52 | INFO    |   SS     median=70.4 mV/dec
+2026-08-16 13:53:52 | INFO    |   tau    median=0.281 ps
+2026-08-16 13:53:53 | INFO    |   parameter table (with FoMs) -> device_parameters.parquet
+2026-08-16 13:53:53 | INFO    | ======================================================================
+2026-08-16 13:53:53 | INFO    | CENSUS: which input moves which figure of merit, per material
+2026-08-16 13:54:22 | INFO    | --- median +/-1sigma spread in log10(FoM) from each input alone ---
+2026-08-16 13:54:22 | INFO    |   input                I_ON     on/off
+2026-08-16 13:54:22 | INFO    |   gap (measured)      0.000      0.000
+2026-08-16 13:54:22 | INFO    |   mass (ASSUMED)      0.089      0.090
+2026-08-16 13:54:22 | INFO    |   eps (measured)      0.004      0.004
+2026-08-16 13:54:22 | INFO    | --- I_ON: materials where the input swings the FoM by >2x ---
+2026-08-16 13:54:22 | INFO    |   gap-sensitive :   12 / 754 (1.6%)
+2026-08-16 13:54:22 | INFO    |   mass-sensitive:    0 / 754 (0.0%)
+2026-08-16 13:54:22 | INFO    | --- on_off: materials where the input swings the FoM by >2x ---
+2026-08-16 13:54:22 | INFO    |   gap-sensitive :   54 / 754 (7.2%)
+2026-08-16 13:54:22 | INFO    |   mass-sensitive:    0 / 754 (0.0%)
+2026-08-16 13:54:22 | INFO    | --- gap-sensitive subset (on/off) ---
+2026-08-16 13:54:22 | INFO    |   n=54  calibrated gap range [0.80, 7.50] eV (median 2.48)
+2026-08-16 13:54:22 | INFO    |   gap-insensitive median E = 2.79 eV
+2026-08-16 13:54:22 | INFO    |   INTERPRETATION. If the gap-sensitive fraction is small, the headline cannot be 'gap uncertainty reorders the shortlist'. It becomes: which figure of merit you rank by determines which uncertainty dominates, and for I_ON the dominant term is effective mass, whose sigma is ASSUMED. That makes the 0.10/0.20/0.40 sweep in Step 7 load-bearing, and it must be stated as the principal limitation.
+2026-08-16 13:54:22 | INFO    | ======================================================================
+2026-08-16 13:54:22 | INFO    | STEP 6 VALIDATION against published DFT-NEGF (PLACEHOLDER VALUES)
+2026-08-16 13:54:22 | INFO    |   mat      I_ON pub  I_ON model   ratio  SS model  citation
+2026-08-16 13:54:22 | INFO    |   MoS2         1250        1733    1.39      76.6  REPLACE_MoS2
+2026-08-16 13:54:22 | INFO    |   WS2          1600        1899    1.19      75.2  REPLACE_WS2
+2026-08-16 13:54:22 | INFO    |   WSe2         1100        1891    1.72      77.6  REPLACE_WSe2
+2026-08-16 13:54:22 | INFO    |   MoTe2        1400        1449    1.04      85.5  REPLACE_MoTe2
+2026-08-16 13:54:22 | INFO    |   P            2400        2333    0.97      74.5  REPLACE_phosphorene
+2026-08-16 13:54:22 | INFO    | --- validation gate ---
+2026-08-16 13:54:22 | INFO    |   geometric-mean ratio = 1.23   (gate: 0.5 to 2.0)
+2026-08-16 13:54:22 | INFO    |   within 2x: 5/5    within 3x: 5/5
+2026-08-16 13:54:22 | INFO    |   PASS
+2026-08-16 13:54:22 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table8_validation.csv
+2026-08-16 13:54:22 | INFO    |   REMINDER: replace the placeholder published values with cited numbers before this table becomes Table 8.
+2026-08-16 13:54:22 | INFO    | [cell11] DONE
+
+2026-08-16 13:54:51 | INFO    | [cell12] 754 materials, 256 draws, 10 regimes x 3 mass sigmas
+2026-08-16 14:04:40 | INFO    | ==============================================================================
+2026-08-16 14:04:40 | INFO    | RANK STABILITY vs TRANSPORT REGIME   (sigma_ln mass = 0.20, the base case)
+2026-08-16 14:04:40 | INFO    |       regime      B   spread     >2x     tau   top10   top20
+2026-08-16 14:04:40 | INFO    |          0.1  0.032    0.337   90.8%   0.849   71.9%   76.2%
+2026-08-16 14:04:40 | INFO    |         0.25  0.077    0.325   78.2%   0.848   70.6%   75.5%
+2026-08-16 14:04:40 | INFO    |          0.5  0.143    0.307   57.4%   0.847   65.3%   75.2%
+2026-08-16 14:04:40 | INFO    |            1  0.250    0.284   36.7%   0.845   65.0%   72.2%
+2026-08-16 14:04:40 | INFO    |            2  0.400    0.248   22.1%   0.840   60.9%   71.7%
+2026-08-16 14:04:40 | INFO    |            4  0.572    0.208   11.0%   0.838   63.4%   69.2%
+2026-08-16 14:04:40 | INFO    |            8  0.728    0.171    6.0%   0.835   65.0%   68.6%
+2026-08-16 14:04:40 | INFO    |           20  0.870    0.131    3.3%   0.830   65.0%   67.3%
+2026-08-16 14:04:40 | INFO    |          100  0.971    0.103    2.8%   0.823   64.7%   65.3%
+2026-08-16 14:04:40 | INFO    |    ballistic  1.000    0.092    2.5%   0.823   65.6%   68.0%
+2026-08-16 14:04:40 | INFO    | --- mass-sigma sensitivity (the ASSUMED input) ---
+2026-08-16 14:04:40 | INFO    |   sigma_ln=0.10:  ballistic tau=0.887 top10=65%   |   diffusive tau=0.918 top10=74%
+2026-08-16 14:04:40 | INFO    |   sigma_ln=0.20:  ballistic tau=0.823 top10=66%   |   diffusive tau=0.849 top10=72%
+2026-08-16 14:04:40 | INFO    |   sigma_ln=0.40:  ballistic tau=0.698 top10=60%   |   diffusive tau=0.720 top10=62%
+2026-08-16 14:04:40 | INFO    | --- headline numbers ---
+2026-08-16 14:04:40 | INFO    |   I_ON spread   ballistic 0.092 dec -> diffusive 0.337 dec   (amplification x3.7, analytic 4.0)
+2026-08-16 14:04:40 | INFO    |   Kendall tau   0.823 -> 0.849
+2026-08-16 14:04:40 | INFO    |   top-10 keep   66% -> 72%
+2026-08-16 14:04:40 | INFO    |   The claim to make: screening rankings are robust at the ballistic limit and degrade predictably as the channel becomes diffusive, with a mass sensitivity exponent moving from -0.5 to -2.0. Report the ballisticity at which top-10 retention drops below 80% as the practical design rule.
+2026-08-16 14:04:40 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/transport_regime_rank_stability.csv
+2026-08-16 14:04:40 | INFO    | [cell12] DONE
+
+2026-08-16 14:05:26 | INFO    | ==============================================================================
+2026-08-16 14:05:26 | INFO    | A. NEAR-TIE TEST  (can invalidate the whole rank-instability finding)
+2026-08-16 14:05:26 | INFO    |   rank uid                      I_ON  gap to next
+2026-08-16 14:05:26 | INFO    |      1 2AsIrTe3-1            14619.3       37.00%
+2026-08-16 14:05:26 | INFO    |      2 2BrTl-1                9210.8       12.82%
+2026-08-16 14:05:26 | INFO    |      3 1STa2Te2-1             8029.7       24.86%
+2026-08-16 14:05:26 | INFO    |      4 2TeTl-2                6033.3        2.70%
+2026-08-16 14:05:26 | INFO    |      5 2IPt-1                 5870.5        0.46%
+2026-08-16 14:05:26 | INFO    |      6 2BiPO4-1               5843.7        2.45%
+2026-08-16 14:05:26 | INFO    |      7 2GaTe-1                5700.7        5.13%
+2026-08-16 14:05:26 | INFO    |      8 2ISb-1                 5408.4       12.02%
+2026-08-16 14:05:26 | INFO    |      9 1PtTe2-1               4758.3        0.18%
+2026-08-16 14:05:26 | INFO    |     10 2GeH-1                 4749.5        9.32%
+2026-08-16 14:05:26 | INFO    |     11 1BiFS2O6-1             4306.7        3.29%
+2026-08-16 14:05:26 | INFO    |     12 1BiHS2O6-1             4165.2        0.22%
+2026-08-16 14:05:26 | INFO    |     13 2Sb-1                  4156.1        5.11%
+2026-08-16 14:05:26 | INFO    |     14 2TeZn-1                3943.6        0.13%
+2026-08-16 14:05:26 | INFO    |     15 2GaGeTe-1              3938.4        0.29%
+2026-08-16 14:05:31 | INFO    |   rank-10 to rank-11 separation : 9.32%
+2026-08-16 14:05:31 | INFO    |   rank-1 to rank-10 spread      : 67.51%
+2026-08-16 14:05:31 | INFO    |   median per-material 1-sigma   : 10.63%
+2026-08-16 14:05:31 | INFO    |   VERDICT: REAL
+2026-08-16 14:05:31 | INFO    |   If the rank-10/11 separation is far below the per-material sigma, the shortlist boundary is a coin flip and 'one third of the top 10 changes' is a statement about ties, not about screening reliability. In that case report dominance probabilities and DROP the top-k retention headline.
+2026-08-16 14:05:31 | INFO    | ==============================================================================
+2026-08-16 14:05:31 | INFO    | B. DOMINANCE AND RANK ENTROPY
+2026-08-16 14:08:10 | INFO    |   dominance matrix for the top 30 -> fig4_dominance_matrix.csv (Figure 4a)
+2026-08-16 14:08:10 | INFO    |   pairs with P(A>B) between 0.4 and 0.6 (statistically tied): 21.4%
+2026-08-16 14:08:10 | INFO    |   pairs with P(A>B) > 0.95 (clearly ordered): 7.7%
+2026-08-16 14:08:10 | INFO    |   rank entropy: median=0.8115  top-30 median=0.5608  (0 = perfectly determined)
+2026-08-16 14:08:10 | INFO    | ==============================================================================
+2026-08-16 14:08:10 | INFO    | C. SOBOL SENSITIVITY
+2026-08-16 14:08:27 | INFO    |   20 representative materials x 1024 Saltelli base samples
+2026-08-16 14:08:27 | INFO    |   --- I_ON: median total-order index ---
+2026-08-16 14:08:27 | INFO    |     Eg         ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |     m_dos_e    ST= 0.017 +/- 0.002   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |     m_cond_e   ST= 0.954 +/- 0.059   influential
+2026-08-16 14:08:27 | INFO    |     m_dos_h    ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |     m_cond_h   ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |     eps        ST= 0.004 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |   --- on_off: median total-order index ---
+2026-08-16 14:08:27 | INFO    |     Eg         ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |     m_dos_e    ST= 0.017 +/- 0.002   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |     m_cond_e   ST= 0.954 +/- 0.060   influential
+2026-08-16 14:08:27 | INFO    |     m_dos_h    ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |     m_cond_h   ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |     eps        ST= 0.004 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:08:27 | INFO    |   Report indices whose confidence interval covers zero as NOT influential, rather than ranking noise.
+2026-08-16 14:08:27 | INFO    | ==============================================================================
+2026-08-16 14:08:27 | INFO    | D. ROBUST SELECTION RULE (Table 10)
+2026-08-16 14:08:27 | INFO    |    rk by posterior MEAN          by 10th-pct LCB                 H
+2026-08-16 14:08:27 | INFO    |     1 As1-Ir1-Te3                Br1-Tl1                     0.304
+2026-08-16 14:08:27 | INFO    |     2 I1-Pt1                     Bi1-O4-P1                   0.356
+2026-08-16 14:08:27 | INFO    |     3 Hf3-N2-O2                  Ga1-Te1                     0.361
+2026-08-16 14:08:27 | INFO    |     4 S1-Ta2-Te2                 As1-Ir1-Te3                 0.395
+2026-08-16 14:08:27 | INFO    |     5 Br1-Tl1                    Ge1-H1                      0.407
+2026-08-16 14:08:27 | INFO    |     6 Co1-S2                     Bi1-F1-O6-S2                0.466
+2026-08-16 14:08:27 | INFO    |     7 Pt1-Te2                    Bi1-H1-O6-S2                0.488
+2026-08-16 14:08:27 | INFO    |     8 Te1-Tl1                    Sb1                         0.495
+2026-08-16 14:08:27 | INFO    |     9 I1-Sb1                     Te1-Tl1                     0.536
+2026-08-16 14:08:27 | INFO    |    10 Bi1-O4-P1                  Te1-Zn1                     0.520
+2026-08-16 14:08:27 | INFO    |   overlap between the two shortlists: 4/10
+2026-08-16 14:08:27 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table10_robust_shortlist.csv
+2026-08-16 14:08:27 | INFO    |   If the overlap is high, the robust rule changes little and should be reported as a null result rather than sold as a contribution.
+2026-08-16 14:08:27 | INFO    | [cell13] DONE
+
+2026-08-16 14:09:01 | INFO    | [cell15] gap-sensitive 54 / 754
+2026-08-16 14:09:01 | INFO    |   Sobol on 20 saturated materials...
+2026-08-16 14:09:18 | INFO    |   Sobol on 20 gap-sensitive materials...
+2026-08-16 14:09:35 | INFO    | --- median total-order indices ---
+2026-08-16 14:09:35 | INFO    |   I_ON    saturated      dominant=m_cond_e   ST=0.951   E_g ST=0.000
+2026-08-16 14:09:35 | INFO    |   I_ON    gap-sensitive  dominant=m_cond_e   ST=0.956   E_g ST=0.000
+2026-08-16 14:09:35 | INFO    |   on_off  saturated      dominant=m_cond_e   ST=0.951   E_g ST=0.000
+2026-08-16 14:09:35 | INFO    |   on_off  gap-sensitive  dominant=m_cond_e   ST=0.956   E_g ST=0.000
+2026-08-16 14:09:35 | INFO    |   Figure 5 (revised) -> /content/drive/MyDrive/TJEECC/figures/fig5_sobol_by_regime.tiff
+2026-08-16 14:09:35 | INFO    |   Caption to write: 'The band gap has no influence once E_g exceeds the ambipolar limit (a), and becomes the dominant term below it (b). Effective mass governs I_ON in both regimes.'
+2026-08-16 14:09:35 | INFO    | [cell15] reference template -> /content/drive/MyDrive/TJEECC/data/processed/table8_references_TEMPLATE.csv
+2026-08-16 14:09:35 | INFO    |   Fill EVERY column from the paper itself. A row missing L_g, V_DD or I_OFF cannot be used: without the off-current specification you are comparing at different threshold voltages, which is the error that produces order-of-magnitude discrepancies.
+2026-08-16 14:09:35 | INFO    | [cell15] DONE
+
+2026-08-16 14:18:03 | INFO    | [cell16] reference table -> /content/drive/MyDrive/TJEECC/data/processed/table8_references_FILLED.csv
+2026-08-16 14:18:03 | INFO    | --- excluded from the ballistic gate ---
+2026-08-16 14:18:03 | INFO    |   Afzalian, npj 2D Mater. Appl. 5, 5 (2021): DISSIPATIVE DFT-NEGF with electron-phonon scattering, I_OFF = 10 nA/um, V_DD = 0.6 V, L = 5 nm. Not a ballistic reference. Use it for the diffusive-limit comparison in the transport-regime analysis instead, where it is the right benchmark.
+2026-08-16 14:18:03 | INFO    | ==============================================================================
+2026-08-16 14:18:03 | INFO    |   mat    class        Lg   Vdd     pub   model  ratio     SS  p?
+2026-08-16 14:18:03 | INFO    |   MoS2   EMA-NEGF      6  0.57    2133    1228   0.58   94.0  n
+2026-08-16 14:18:03 | INFO    |   MoS2   EMA-NEGF      8  0.60    2100    1651   0.79   79.9  n
+2026-08-16 14:18:03 | INFO    |   MoS2   DFT-NEGF     10  0.50     348    1239   3.56   72.5  n
+2026-08-16 14:18:03 | INFO    |   MoS2   DFT-NEGF      8  0.50     273    1066   3.91   79.9  n
+2026-08-16 14:18:03 | INFO    |   MoS2   DFT-NEGF      6  0.50     221     677   3.07   99.5  n
+2026-08-16 14:18:03 | INFO    |   WSe2   DFT-NEGF      5  0.64    1464    1028   0.70  120.3  p
+2026-08-16 14:18:03 | INFO    |   WSe2   DFT-NEGF      7  0.69    1302    2295   1.76   87.7  p
+2026-08-16 14:18:03 | INFO    |   WSe2   DFT-NEGF      9  0.72    1292    3029   2.34   75.3  p
+2026-08-16 14:18:03 | INFO    | --- validation gate ---
+2026-08-16 14:18:03 | INFO    |   EMA-NEGF   (PRIMARY GATE): geometric-mean ratio = 0.67, within 2x: 2/2
+2026-08-16 14:18:03 | INFO    |     PASS  (gate: 0.5 to 2.0)
+2026-08-16 14:18:03 | INFO    |   DFT-NEGF   (systematic offset): geometric-mean ratio = 2.23, within 2x: 2/6
+2026-08-16 14:18:03 | INFO    |   DFT-NEGF, n-type MoS2 rows only: geometric-mean ratio = 3.49  <- quote this, not the mixed-carrier value above
+2026-08-16 14:18:03 | INFO    |   model/full-band offset relative to model/EMA: x5.2
+2026-08-16 14:18:03 | INFO    |   Interpretation for the Limitations section: an effective-mass, ideal-contact ballistic model overestimates full-band DFT-NEGF with metal contacts by roughly this factor. Ni et al. document the same gap between EMA and full-band NEGF within a single table (2133 vs 221 uA/um at L = 6 nm). This is a known, systematic property of the model class, not a defect of the implementation, and it does not affect RELATIVE rankings, which is what this paper reports.
+2026-08-16 14:18:03 | INFO    | --- caveats to carry into the manuscript ---
+2026-08-16 14:18:03 | INFO    |   1. The WSe2 rows are p-type; our model reports the n-branch. Either compare the hole branch explicitly or drop these rows and say why.
+2026-08-16 14:18:03 | INFO    |   2. Sun et al. quote EOT as a range (0.41-0.54 nm); the midpoint is used here. State that.
+2026-08-16 14:18:03 | INFO    |   3. Ni et al. include Ti electrodes with a Schottky barrier; our contacts are ideal. This is part of the offset above.
+2026-08-16 14:18:03 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table8_validation_real.csv
+2026-08-16 14:18:03 | INFO    | [cell16] DONE
+
+2026-08-16 14:18:22 | INFO    | [cell17] 54 flagged gap-sensitive
+2026-08-16 14:18:22 | INFO    | --- distribution of the flagged set ---
+2026-08-16 14:18:22 | INFO    |   calibrated E_g (eV)    flagged: med=2.482 [0.804,7.5]   others: med=2.794
+2026-08-16 14:18:22 | INFO    |   hole DOS mass          flagged: med=0.8811 [0.0874,7.43]   others: med=0.9832
+2026-08-16 14:18:22 | INFO    |   electron DOS mass      flagged: med=0.6224 [0.112,4.72]   others: med=0.6839
+2026-08-16 14:18:22 | INFO    |   central I_OFF (A/m)    flagged: med=0.1 [0.1,105]   others: med=0.1
+2026-08-16 14:18:22 | INFO    |   central on/off         flagged: med=1.51e+04 [45.3,3.86e+04]   others: med=1.548e+04
+2026-08-16 14:18:22 | INFO    | --- reachability ---
+2026-08-16 14:18:22 | INFO    |   flagged materials whose central I_OFF exceeds the 100 nA/um spec: 3 / 54
+2026-08-16 14:18:22 | INFO    |   same for the non-flagged set: 28 / 700
+2026-08-16 14:18:22 | INFO    |   If the flagged set is exactly the ambipolar-limited set, the census is right and the mechanism is real: for these materials I_OFF is NOT pinned at the spec, so the gap moves it directly.
+2026-08-16 14:18:22 | INFO    | --- per-material trace, 6 flagged examples ---
+2026-08-16 14:18:22 | INFO    |   uid                 E_g   E_sd      I_OFF     on/off  spread  mechanism
+2026-08-16 14:18:22 | INFO    |   2PdTe2-1           2.32  0.259  1.000e-01  1.618e+04   3.882  I_OFF pinned in all draws -> gap inert
+2026-08-16 14:18:22 | INFO    |   2AlITe-1           3.85  0.264  1.000e-01  2.262e+04   3.605  I_OFF pinned in all draws -> gap inert
+2026-08-16 14:18:22 | INFO    |   1CdF2-1            7.50  0.292  1.000e-01  1.637e+04   3.340  I_OFF pinned in all draws -> gap inert
+2026-08-16 14:18:22 | INFO    |   2OsSe2-1           1.74  0.268  1.000e-01  1.160e+04   3.328  I_OFF floats in 2% of draws -> gap acts
+2026-08-16 14:18:22 | INFO    |   2AsMgSe3-1         2.75  0.266  1.000e-01  1.930e+04   3.260  I_OFF pinned in all draws -> gap inert
+2026-08-16 14:18:22 | INFO    |   2MoWSe4-1          2.34  0.259  1.000e-01  1.645e+04   3.111  I_OFF pinned in all draws -> gap inert
+2026-08-16 14:18:22 | INFO    | --- reconciling with Sobol ---
+2026-08-16 14:18:22 | INFO    |   cell15 selects by I_ON quantile within the flagged pool.
+2026-08-16 14:18:22 | INFO    |   flagged pool  E_g: median=2.48 eV
+2026-08-16 14:18:22 | INFO    |   the 20 highest-I_ON of them: median=2.65 eV
+2026-08-16 14:18:22 | INFO    |   fraction of the pool with E_g < 1.4 eV (ambipolar window): 7%
+2026-08-16 14:18:22 | INFO    |   fraction of the I_ON-selected 20 with E_g < 1.4 eV: 10%
+2026-08-16 14:18:22 | INFO    |   If the second number is far below the first, cell15 sampled the WRONG materials: it picked the high-current members of the flagged pool, which are wide-gap, so E_g was inert in the Sobol design. Fix: select the Sobol representatives by E_g, not by I_ON.
+2026-08-16 14:18:22 | INFO    | --- verdict ---
+2026-08-16 14:18:22 | INFO    |   The census flag is NOT explained by ambipolar limitation. Inspect the per-material traces above before using the 54 in the paper; if the mechanism cannot be identified, drop the subset and report only that the gap is inert at this technology corner.
+2026-08-16 14:18:22 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/step8_flagged_gap_sensitive.csv
+2026-08-16 14:18:22 | INFO    | [cell17] DONE
+
+2026-08-16 14:23:02 | INFO    | [cell11] device-ready 1,085 -> with full parameter set 754
+2026-08-16 14:23:02 | INFO    |   eps_ch: median=11.42 [3.92, 40.05]
+2026-08-16 14:23:02 | INFO    |   E_mean: median=2.77 eV [1.25, 7.59]
+2026-08-16 14:23:02 | INFO    | --- central figures of merit ---
+2026-08-16 14:23:02 | INFO    |   I_ON   median=1.595e+03 A/m  (1 A/m = 1 uA/um)
+2026-08-16 14:23:02 | INFO    |   on/off median=1.547e+04
+2026-08-16 14:23:02 | INFO    |   SS     median=70.4 mV/dec
+2026-08-16 14:23:02 | INFO    |   tau    median=0.281 ps
+2026-08-16 14:23:02 | INFO    |   parameter table (with FoMs) -> device_parameters.parquet
+2026-08-16 14:23:02 | INFO    | ======================================================================
+2026-08-16 14:23:02 | INFO    | CENSUS: which input moves which figure of merit, per material
+2026-08-16 14:23:02 | INFO    |   gap-posterior alignment check: max relative deviation of draw mean from E_mean = 0.076 (must be << 1)
+2026-08-16 14:23:31 | INFO    | --- median +/-1sigma spread in log10(FoM) from each input alone ---
+2026-08-16 14:23:31 | INFO    |   input                I_ON     on/off
+2026-08-16 14:23:31 | INFO    |   gap (measured)      0.000      0.000
+2026-08-16 14:23:31 | INFO    |   mass (ASSUMED)      0.089      0.090
+2026-08-16 14:23:31 | INFO    |   eps (measured)      0.004      0.004
+2026-08-16 14:23:31 | INFO    | --- I_ON: materials where the input swings the FoM by >2x ---
+2026-08-16 14:23:31 | INFO    |   gap-sensitive :   18 / 754 (2.4%)
+2026-08-16 14:23:31 | INFO    |   mass-sensitive:    0 / 754 (0.0%)
+2026-08-16 14:23:31 | INFO    | --- on_off: materials where the input swings the FoM by >2x ---
+2026-08-16 14:23:31 | INFO    |   gap-sensitive :   70 / 754 (9.3%)
+2026-08-16 14:23:31 | INFO    |   mass-sensitive:    0 / 754 (0.0%)
+2026-08-16 14:23:31 | INFO    | --- gap-sensitive subset (on/off) ---
+2026-08-16 14:23:31 | INFO    |   n=70  calibrated gap range [0.38, 1.44] eV (median 1.20)
+2026-08-16 14:23:31 | INFO    |   gap-insensitive median E = 2.95 eV
+2026-08-16 14:23:31 | INFO    |   INTERPRETATION. If the gap-sensitive fraction is small, the headline cannot be 'gap uncertainty reorders the shortlist'. It becomes: which figure of merit you rank by determines which uncertainty dominates, and for I_ON the dominant term is effective mass, whose sigma is ASSUMED. That makes the 0.10/0.20/0.40 sweep in Step 7 load-bearing, and it must be stated as the principal limitation.
+2026-08-16 14:23:32 | INFO    | ======================================================================
+2026-08-16 14:23:32 | INFO    | STEP 6 VALIDATION against published DFT-NEGF (PLACEHOLDER VALUES)
+2026-08-16 14:23:32 | INFO    |   mat      I_ON pub  I_ON model   ratio  SS model  citation
+2026-08-16 14:23:32 | INFO    |   MoS2         1250        1733    1.39      76.6  REPLACE_MoS2
+2026-08-16 14:23:32 | INFO    |   WS2          1600        1899    1.19      75.2  REPLACE_WS2
+2026-08-16 14:23:32 | INFO    |   WSe2         1100        1891    1.72      77.6  REPLACE_WSe2
+2026-08-16 14:23:32 | INFO    |   MoTe2        1400        1449    1.04      85.5  REPLACE_MoTe2
+2026-08-16 14:23:32 | INFO    |   P            2400        2333    0.97      74.5  REPLACE_phosphorene
+2026-08-16 14:23:32 | INFO    | --- validation gate ---
+2026-08-16 14:23:32 | INFO    |   geometric-mean ratio = 1.23   (gate: 0.5 to 2.0)
+2026-08-16 14:23:32 | INFO    |   within 2x: 5/5    within 3x: 5/5
+2026-08-16 14:23:32 | INFO    |   PASS
+2026-08-16 14:23:32 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table8_validation.csv
+2026-08-16 14:23:32 | INFO    |   REMINDER: replace the placeholder published values with cited numbers before this table becomes Table 8.
+2026-08-16 14:23:32 | INFO    | [cell11] DONE
+
+2026-08-16 14:24:12 | INFO    | [cell12] 754 materials, 256 draws, 10 regimes x 3 mass sigmas
+2026-08-16 14:34:11 | INFO    | ==============================================================================
+2026-08-16 14:34:11 | INFO    | RANK STABILITY vs TRANSPORT REGIME   (sigma_ln mass = 0.20, the base case)
+2026-08-16 14:34:11 | INFO    |       regime      B   spread     >2x     tau   top10   top20
+2026-08-16 14:34:11 | INFO    |          0.1  0.032    0.337   90.8%   0.849   71.9%   76.2%
+2026-08-16 14:34:11 | INFO    |         0.25  0.077    0.325   78.2%   0.848   70.6%   75.5%
+2026-08-16 14:34:11 | INFO    |          0.5  0.143    0.307   57.4%   0.847   65.3%   75.2%
+2026-08-16 14:34:11 | INFO    |            1  0.250    0.284   36.7%   0.845   65.0%   72.2%
+2026-08-16 14:34:11 | INFO    |            2  0.400    0.248   22.1%   0.840   60.9%   71.7%
+2026-08-16 14:34:11 | INFO    |            4  0.572    0.208   11.0%   0.838   63.4%   69.2%
+2026-08-16 14:34:11 | INFO    |            8  0.728    0.171    6.0%   0.835   65.0%   68.6%
+2026-08-16 14:34:11 | INFO    |           20  0.870    0.131    3.3%   0.830   65.0%   67.3%
+2026-08-16 14:34:11 | INFO    |          100  0.971    0.103    2.8%   0.823   64.7%   65.3%
+2026-08-16 14:34:11 | INFO    |    ballistic  1.000    0.092    2.5%   0.823   65.6%   68.0%
+2026-08-16 14:34:11 | INFO    | --- mass-sigma sensitivity (the ASSUMED input) ---
+2026-08-16 14:34:11 | INFO    |   sigma_ln=0.10:  ballistic tau=0.887 top10=65%   |   diffusive tau=0.918 top10=74%
+2026-08-16 14:34:11 | INFO    |   sigma_ln=0.20:  ballistic tau=0.823 top10=66%   |   diffusive tau=0.849 top10=72%
+2026-08-16 14:34:11 | INFO    |   sigma_ln=0.40:  ballistic tau=0.698 top10=60%   |   diffusive tau=0.720 top10=62%
+2026-08-16 14:34:11 | INFO    | --- headline numbers ---
+2026-08-16 14:34:11 | INFO    |   I_ON spread   ballistic 0.092 dec -> diffusive 0.337 dec   (amplification x3.7, analytic 4.0)
+2026-08-16 14:34:11 | INFO    |   Kendall tau   0.823 -> 0.849
+2026-08-16 14:34:11 | INFO    |   top-10 keep   66% -> 72%
+2026-08-16 14:34:11 | INFO    |   The claim to make: screening rankings are robust at the ballistic limit and degrade predictably as the channel becomes diffusive, with a mass sensitivity exponent moving from -0.5 to -2.0. Report the ballisticity at which top-10 retention drops below 80% as the practical design rule.
+2026-08-16 14:34:11 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/transport_regime_rank_stability.csv
+2026-08-16 14:34:11 | INFO    | [cell12] DONE
+
+2026-08-16 14:34:17 | INFO    | ==============================================================================
+2026-08-16 14:34:17 | INFO    | A. NEAR-TIE TEST  (can invalidate the whole rank-instability finding)
+2026-08-16 14:34:17 | INFO    |   rank uid                      I_ON  gap to next
+2026-08-16 14:34:17 | INFO    |      1 2AsIrTe3-1            14619.3       37.00%
+2026-08-16 14:34:17 | INFO    |      2 2BrTl-1                9210.8       12.82%
+2026-08-16 14:34:17 | INFO    |      3 1STa2Te2-1             8029.7       24.86%
+2026-08-16 14:34:17 | INFO    |      4 2TeTl-2                6033.3        2.70%
+2026-08-16 14:34:17 | INFO    |      5 2IPt-1                 5870.5        0.46%
+2026-08-16 14:34:17 | INFO    |      6 2BiPO4-1               5843.7        2.45%
+2026-08-16 14:34:17 | INFO    |      7 2GaTe-1                5700.7        5.13%
+2026-08-16 14:34:17 | INFO    |      8 2ISb-1                 5408.4       12.02%
+2026-08-16 14:34:17 | INFO    |      9 1PtTe2-1               4758.3        0.18%
+2026-08-16 14:34:17 | INFO    |     10 2GeH-1                 4749.5        9.32%
+2026-08-16 14:34:17 | INFO    |     11 1BiFS2O6-1             4306.7        3.29%
+2026-08-16 14:34:17 | INFO    |     12 1BiHS2O6-1             4165.2        0.22%
+2026-08-16 14:34:17 | INFO    |     13 2Sb-1                  4156.1        5.11%
+2026-08-16 14:34:17 | INFO    |     14 2TeZn-1                3943.6        0.13%
+2026-08-16 14:34:17 | INFO    |     15 2GaGeTe-1              3938.4        0.29%
+2026-08-16 14:34:22 | INFO    |   rank-10 to rank-11 separation : 9.32%
+2026-08-16 14:34:22 | INFO    |   rank-1 to rank-10 spread      : 67.51%
+2026-08-16 14:34:22 | INFO    |   median per-material 1-sigma   : 10.63%
+2026-08-16 14:34:22 | INFO    |   VERDICT: REAL
+2026-08-16 14:34:22 | INFO    |   If the rank-10/11 separation is far below the per-material sigma, the shortlist boundary is a coin flip and 'one third of the top 10 changes' is a statement about ties, not about screening reliability. In that case report dominance probabilities and DROP the top-k retention headline.
+2026-08-16 14:34:22 | INFO    | ==============================================================================
+2026-08-16 14:34:22 | INFO    | B. DOMINANCE AND RANK ENTROPY
+2026-08-16 14:37:02 | INFO    |   dominance matrix for the top 30 -> fig4_dominance_matrix.csv (Figure 4a)
+2026-08-16 14:37:02 | INFO    |   pairs with P(A>B) between 0.4 and 0.6 (statistically tied): 21.4%
+2026-08-16 14:37:02 | INFO    |   pairs with P(A>B) > 0.95 (clearly ordered): 7.7%
+2026-08-16 14:37:02 | INFO    |   rank entropy: median=0.8115  top-30 median=0.5608  (0 = perfectly determined)
+2026-08-16 14:37:02 | INFO    | ==============================================================================
+2026-08-16 14:37:02 | INFO    | C. SOBOL SENSITIVITY
+2026-08-16 14:37:19 | INFO    |   20 representative materials x 1024 Saltelli base samples
+2026-08-16 14:37:19 | INFO    |   --- I_ON: median total-order index ---
+2026-08-16 14:37:19 | INFO    |     Eg         ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |     m_dos_e    ST= 0.017 +/- 0.002   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |     m_cond_e   ST= 0.954 +/- 0.059   influential
+2026-08-16 14:37:19 | INFO    |     m_dos_h    ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |     m_cond_h   ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |     eps        ST= 0.004 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |   --- on_off: median total-order index ---
+2026-08-16 14:37:19 | INFO    |     Eg         ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |     m_dos_e    ST= 0.017 +/- 0.002   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |     m_cond_e   ST= 0.954 +/- 0.059   influential
+2026-08-16 14:37:19 | INFO    |     m_dos_h    ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |     m_cond_h   ST= 0.000 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |     eps        ST= 0.004 +/- 0.000   NOT influential (CI covers 0)
+2026-08-16 14:37:19 | INFO    |   Report indices whose confidence interval covers zero as NOT influential, rather than ranking noise.
+2026-08-16 14:37:19 | INFO    | ==============================================================================
+2026-08-16 14:37:19 | INFO    | D. ROBUST SELECTION RULE (Table 10)
+2026-08-16 14:37:19 | INFO    |    rk by posterior MEAN          by 10th-pct LCB                 H
+2026-08-16 14:37:19 | INFO    |     1 As1-Ir1-Te3                Br1-Tl1                     0.304
+2026-08-16 14:37:19 | INFO    |     2 I1-Pt1                     Bi1-O4-P1                   0.356
+2026-08-16 14:37:19 | INFO    |     3 Hf3-N2-O2                  Ga1-Te1                     0.361
+2026-08-16 14:37:19 | INFO    |     4 S1-Ta2-Te2                 As1-Ir1-Te3                 0.395
+2026-08-16 14:37:19 | INFO    |     5 Br1-Tl1                    Ge1-H1                      0.407
+2026-08-16 14:37:19 | INFO    |     6 Co1-S2                     Bi1-F1-O6-S2                0.466
+2026-08-16 14:37:19 | INFO    |     7 Pt1-Te2                    Bi1-H1-O6-S2                0.488
+2026-08-16 14:37:19 | INFO    |     8 Te1-Tl1                    Sb1                         0.495
+2026-08-16 14:37:19 | INFO    |     9 I1-Sb1                     Te1-Tl1                     0.536
+2026-08-16 14:37:19 | INFO    |    10 Bi1-O4-P1                  Te1-Zn1                     0.520
+2026-08-16 14:37:19 | INFO    |   overlap between the two shortlists: 4/10
+2026-08-16 14:37:19 | INFO    |   saved /content/drive/MyDrive/TJEECC/data/processed/table10_robust_shortlist.csv
+2026-08-16 14:37:19 | INFO    |   If the overlap is high, the robust rule changes little and should be reported as a null result rather than sold as a contribution.
+2026-08-16 14:37:19 | INFO    | [cell13] DONE
+
+2026-08-16 14:37:39 | INFO    | [cell15] gap-sensitive 70 / 754
+2026-08-16 14:37:39 | INFO    |   Sobol on 20 saturated materials...
+2026-08-16 14:37:57 | INFO    |   Sobol on 20 gap-sensitive materials...
+2026-08-16 14:38:12 | INFO    | --- median total-order indices ---
+2026-08-16 14:38:12 | INFO    |   I_ON    saturated      dominant=m_cond_e   ST=0.957   E_g ST=0.000
+2026-08-16 14:38:12 | INFO    |   I_ON    gap-sensitive  dominant=Eg         ST=0.818   E_g ST=0.818
+2026-08-16 14:38:12 | INFO    |   on_off  saturated      dominant=m_cond_e   ST=0.957   E_g ST=0.000
+2026-08-16 14:38:12 | INFO    |   on_off  gap-sensitive  dominant=Eg         ST=0.998   E_g ST=0.998
+2026-08-16 14:38:13 | INFO    |   Figure 5 (revised) -> /content/drive/MyDrive/TJEECC/figures/fig5_sobol_by_regime.tiff
+2026-08-16 14:38:13 | INFO    |   Caption to write: 'The band gap has no influence once E_g exceeds the ambipolar limit (a), and becomes the dominant term below it (b). Effective mass governs I_ON in both regimes.'
+2026-08-16 14:38:13 | INFO    | [cell15] reference template -> /content/drive/MyDrive/TJEECC/data/processed/table8_references_TEMPLATE.csv
+2026-08-16 14:38:13 | INFO    |   Fill EVERY column from the paper itself. A row missing L_g, V_DD or I_OFF cannot be used: without the off-current specification you are comparing at different threshold voltages, which is the error that produces order-of-magnitude discrepancies.
+2026-08-16 14:38:13 | INFO    | [cell15] DONE
+
+2026-08-16 21:31:57 | INFO    | === SESSION START: step01_ingest_c2db ===
+2026-08-16 21:31:58 | INFO    | UTC time        : 2026-08-16T21:31:58+00:00
+2026-08-16 21:31:58 | INFO    | Python          : 3.12.13 (Linux-6.6.122+-x86_64-with-glibc2.35)
+2026-08-16 21:31:58 | INFO    | Seed            : 20260815
+2026-08-16 21:31:58 | INFO    | ROOT            : /content/drive/MyDrive/TJEECC
+2026-08-16 21:31:58 | INFO    | Log file        : /content/drive/MyDrive/TJEECC/logs/step01_ingest_c2db.log
+2026-08-16 21:31:58 | INFO    | --- package versions ---
+2026-08-16 21:31:58 | INFO    |   ase           : 3.29.0
+2026-08-16 21:31:58 | INFO    |   pymatgen      : 2026.5.4
+2026-08-16 21:31:58 | INFO    |   jarvis-tools  : 2026.6.12
+2026-08-16 21:31:58 | INFO    |   SALib         : 1.5.2
+2026-08-16 21:31:58 | INFO    |   numpyro       : 0.21.0
+2026-08-16 21:31:58 | INFO    |   arviz         : 0.22.0
+2026-08-16 21:31:58 | INFO    |   tqdm          : 4.67.3
+2026-08-16 21:31:58 | INFO    |   pyarrow       : 18.1.0
+2026-08-16 21:31:58 | INFO    |   numpy         : 2.0.2
+2026-08-16 21:31:58 | INFO    |   scipy         : 1.16.3
+2026-08-16 21:31:58 | INFO    |   pandas        : 2.2.2
+2026-08-16 21:31:58 | INFO    |   matplotlib    : 3.10.0
+2026-08-16 21:31:58 | INFO    |   jax           : 0.7.2
+2026-08-16 21:31:58 | INFO    |   jaxlib        : 0.7.2
+2026-08-16 21:31:58 | INFO    | --- hardware ---
+2026-08-16 21:31:58 | INFO    |   /content disk : 188.5 GB free of 235.7 GB (47.2 GB used)
+2026-08-16 21:31:58 | INFO    |   Drive         : 179.1 GB free of 235.7 GB
+2026-08-16 21:31:58 | INFO    |   RAM           : 51.0 GB total, 48.9 GB available
+2026-08-16 21:31:58 | INFO    |   CPU cores     : 8
+2026-08-16 21:31:58 | INFO    |   GPU           : Tesla T4, 15360 MiB, 580.82.07
+2026-08-16 21:32:01 | INFO    |   JAX backend   : gpu  devices=[CudaDevice(id=0)]
+2026-08-16 21:32:01 | INFO    |   MCMC plan     : chain_method='vectorized' (single GPU)
+2026-08-16 21:32:01 | INFO    |   numpyro plat  : cuda
+2026-08-16 21:32:01 | INFO    |   jax_enable_x64: True
+2026-08-16 21:32:01 | INFO    |   NOTE: Tesla T4 has weak FP64. With jax_enable_x64=True the Step 4 MCMC may run faster on a CPU high-RAM runtime. Time both before choosing.
+2026-08-16 21:32:01 | INFO    | --- data files ---
+2026-08-16 21:32:01 | INFO    |   OK      c2db.db        0.07 GB
+2026-08-16 21:32:01 | INFO    |   OK      c2db.tar.gz    0.42 GB
+2026-08-16 21:32:01 | INFO    | === BOOTSTRAP COMPLETE: step01_ingest_c2db ===
+
+2026-08-16 21:38:13 | INFO    | [cell18] counts: device-ready 1085, full params 754, G0W0 anchors 129, JARVIS matches 131, gap-sensitive 70
+2026-08-16 21:38:14 | INFO    |   fig1_pipeline  16.00 x 7.40 cm  236 px/cm  OK
+2026-08-16 21:38:14 | INFO    |   Caption: 'Analysis pipeline. Materials data from C2DB and JARVIS-DFT are screened for stability and band parabolicity, the band gap is calibrated against G0W0 anchors with cross-validated predictive intervals, and the resulting uncertainty is propagated through a ballistic ambipolar double-gate device model to rank-stability and sensitivity metrics.'
+2026-08-16 21:38:14 | INFO    | [cell18] DONE
+
+2026-08-16 21:41:41 | INFO    | [cell18] counts: device-ready 1085, full params 754, G0W0 anchors 129, JARVIS matches 131, gap-sensitive 70
+2026-08-16 21:41:43 | INFO    |   fig1_pipeline  16.00 x 7.40 cm  236 px/cm  OK
+2026-08-16 21:41:43 | INFO    |   Caption: 'Analysis pipeline. Materials data from C2DB and JARVIS-DFT are screened for stability and band parabolicity, the band gap is calibrated against G0W0 anchors with cross-validated predictive intervals, and the resulting uncertainty is propagated through a ballistic ambipolar double-gate device model to rank-stability and sensitivity metrics.'
+2026-08-16 21:41:43 | INFO    | [cell18] DONE
+
+2026-08-16 21:44:33 | INFO    | [cell18] counts: device-ready 1085, full params 754, G0W0 anchors 129, JARVIS matches 131, gap-sensitive 70
+2026-08-16 21:44:35 | INFO    |   fig1_pipeline  16.00 x 7.40 cm  236 px/cm  OK
+2026-08-16 21:44:35 | INFO    |   Caption: 'Analysis pipeline. Materials data from C2DB and JARVIS-DFT are screened for stability and band parabolicity, the band gap is calibrated against G0W0 anchors with cross-validated predictive intervals, and the resulting uncertainty is propagated through a ballistic ambipolar double-gate device model to rank-stability and sensitivity metrics.'
+2026-08-16 21:44:35 | INFO    | [cell18] DONE
+

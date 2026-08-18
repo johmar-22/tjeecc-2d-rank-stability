@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or the derived data, please cite the paper below."
+title: "Rank stability of two-dimensional transistor channel screening under first-principles uncertainty: analysis code and derived data"
+abstract: >-
+  Code and derived data for a screening-scale test of whether the ordering of
+  candidate two-dimensional transistor channel materials survives documented
+  first-principles uncertainty. Calibrated band-gap, effective-mass and
+  permittivity uncertainty are propagated through a ballistic ambipolar
+  double-gate device model for 754 monolayers, and assessed with pairwise
+  dominance probabilities, Kendall's tau, rank entropy and Sobol indices.
+type: software
+license: MIT
+authors:
+  - family-names: Omar
+    given-names: Johaimen M.
+    orcid: "https://orcid.org/0009-0005-3495-1722"
+    affiliation: >-
+      Department of Electrical and Electronics Engineering, Institute of
+      Graduate Education, Kastamonu University, Kastamonu, Turkiye; and
+      Department of Electrical and Electronics Engineering, College of
+      Engineering, Mindanao State University-Main Campus, Marawi City,
+      Philippines
+keywords:
+  - two-dimensional semiconductors
+  - uncertainty quantification
+  - device modeling
+  - materials screening
+  - sensitivity analysis
+preferred-citation:
+  type: article
+  title: "Rank stability of two-dimensional transistor channel screening under first-principles uncertainty"
+  authors:
+    - family-names: Omar
+      given-names: Johaimen M.
+      orcid: "https://orcid.org/0009-0005-3495-1722"
+  journal: "Turkish Journal of Electrical Engineering & Computer Sciences"
+  year: 2026
+  status: submitted
