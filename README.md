@@ -1,7 +1,6 @@
 # Rank stability of two-dimensional transistor channel screening under first-principles uncertainty
 
-Analysis code and derived data for the manuscript of the same name, submitted to the
-*Turkish Journal of Electrical Engineering & Computer Sciences*.
+Analysis code and derived data for the manuscript of the same name
 
 Computational screening of 2D channel materials is normally reported as a ranked list of
 single-valued figures of merit. This repository tests whether that **ordering** survives the
