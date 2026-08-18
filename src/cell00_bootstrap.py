@@ -20,7 +20,11 @@ import logging, shutil, platform, tempfile, warnings
 from pathlib import Path
 from datetime import datetime, timezone
 
-IN_COLAB = importlib.util.find_spec("google.colab") is not None
+try:
+    import google.colab
+    IN_COLAB = True
+except ModuleNotFoundError:
+    IN_COLAB = False
 
 # --- 1. Project root ---------------------------------------------------------
 # Resolution order: $TJEECC_ROOT -> repository directory (parent of this file).
