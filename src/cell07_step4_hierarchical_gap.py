@@ -41,8 +41,8 @@ log(f"[step4] device-ready: {len(dev):,}")
 # measured. The least we can do is confirm the central values against
 # literature for well-characterised monolayers.
 log("--- preflight: C2DB m_dos vs literature (m_0) ---")
-LIT = {"MoS2": 0.47, "WS2": 0.31, "WSe2": 0.34, "MoSe2": 0.55,
-       "MoTe2": 0.55, "BN": 0.90}
+LIT = {"MoS2": 0.47, "WS2": 0.27, "WSe2": 0.29, "MoSe2": 0.58,
+       "MoTe2": 0.61, "BN": 0.97}
 def ckey(f):
     rc = Composition(f).reduced_composition.get_el_amt_dict()
     return "-".join(f"{e}{int(round(n))}" for e, n in sorted(rc.items()))
