@@ -85,8 +85,8 @@ d["in_anchor_box"] = inbox
 # If the map is unbiased these should agree within roughly the residual sigma
 # (0.26 eV). A systematic overshoot across all of them indicates bias.
 log("--- predicted vs literature G0W0 (eV) ---")
-LIT_GW = {"MoS2": 2.70, "WS2": 2.85, "WSe2": 2.50, "MoSe2": 2.35,
-          "MoTe2": 1.85, "BN": 6.80, "P": 2.10}
+LIT_GW = {"MoS2": 2.82, "WS2": 2.88, "WSe2": 2.34, "MoSe2": 2.41,
+          "MoTe2": 1.77, "BN": 7.43, "P": 2.00}
 def ckey(f):
     rc = Composition(f).reduced_composition.get_el_amt_dict()
     return "-".join(f"{e}{int(round(n))}" for e, n in sorted(rc.items()))
