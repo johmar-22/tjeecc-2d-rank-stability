@@ -1,6 +1,6 @@
 # Rank stability of two-dimensional transistor channel screening under first-principles uncertainty
 
-Analysis code and derived data for the manuscript of the same name
+Analysis code and derived data for the manuscript
 
 Computational screening of 2D channel materials is normally reported as a ranked list of
 single-valued figures of merit. This repository tests whether that **ordering** survives the
@@ -61,17 +61,15 @@ states plainly:
 > "The full dataset is provided upon request."
 > — <https://www.2dhub.org/c2db/c2db.html>
 
-The dataset is therefore released by its authors, to requesters, on their terms. It is not
-mine to pass on, and this repository does not mirror it. If you need the raw database, request
-it from CAMD exactly as I did. Instead:
+The dataset is therefore released by its authors, to requesters, on their terms. If you need the raw database, request
+it from CAMD. Instead:
 
 ```bash
 python download_data.py            # how to obtain it, and from whom
 python download_data.py --verify   # confirm you have the same snapshot as the paper
 ```
 
-The exact snapshot used is pinned by SHA-256 in `download_data.py`, so a reviewer who requests
-C2DB independently can prove they are running against identical inputs:
+The exact snapshot used is pinned by SHA-256 in `download_data.py`:
 
 ```
 c2db.db       74,481,664 bytes  sha256 a1a96ebc00c27daf…66aef2d
