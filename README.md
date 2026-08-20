@@ -107,7 +107,7 @@ remain the record of what was actually used.
 
 Stage 7 is deliberately retained even though it fails. The failure is the reason the paper
 calibrates directly rather than treating PBE and HSE06 as independent measurements of a latent
-gap, and a reviewer should be able to see it rather than take the claim on trust.
+gap.
 
 ---
 
