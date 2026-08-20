@@ -61,7 +61,7 @@ states plainly:
 > "The full dataset is provided upon request."
 > — <https://www.2dhub.org/c2db/c2db.html>
 
-The dataset is therefore released by its authors, to requesters, on their terms. If you need the raw database, request
+The dataset is therefore released by its authors, to requesters, on their terms. If you need the raw database, please request
 it from CAMD. Instead:
 
 ```bash
